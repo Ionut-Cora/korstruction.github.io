@@ -2,16 +2,16 @@ const root = document.getElementById('root');
 
 const galleryPictures = [
     {
-        image: './images/g1.jpg'
-    },
-    {
-        image: './images/g2.jpg'
-    },
-    {
         image: './images/g3.jpg'
     },
     {
         image: './images/g4.jpg'
+    },
+    {
+        image: './images/d1.jpg'
+    },
+    {
+        image: './images/d7.jpg'
     }
 ];
 
@@ -46,6 +46,33 @@ const galleryPagePictures = [
     {
         image: './images/g10.jpg'
     },
+];
+
+const galleryPageDonePictures = [
+    {
+        image: './images/d1.jpg'
+    },
+    {
+        image: './images/d2.jpg'
+    },
+    {
+        image: './images/d3.jpg'
+    },
+    {
+        image: './images/d4.jpg'
+    },
+    {
+        image: './images/d5.jpg'
+    },
+    {
+        image: './images/d6.jpg'
+    },
+    {
+        image: './images/d7.jpg'
+    },
+    {
+        image: './images/d8.jpg'
+    }
 ];
 
 window.addEventListener('load', () => {
@@ -87,20 +114,29 @@ window.addEventListener('load', () => {
                             <h2>Korstruction London</h2>
                             <p>Over 50 years experience in the construction industry</p>                  
                         </div>
-                        <button class="find-more">Find More</button>
+                        <div class="header-btns">
+                            <button class="find-more">Find More</button>
+                            <button class="contact-us">Contact Us</button>                      
+                        </div>
                     </div>
                     <div class="picture2">
                         <div class="title">
                             <h2>Reinforcement Experts</h2>
                             <p>Steel fixing for the UK</p>                
                         </div>
-                        <button class="find-more">Find More</button>
+                        <div class="header-btns">
+                            <button class="find-more">Find More</button>
+                            <button class="contact-us">Contact Us</button>                      
+                        </div>
                     </div>
                     <div class="picture3">
                         <div class="title">
                             <h2>London's leading carpentry & joinery</h2>
                         </div>
-                        <button class="find-more">Find More</button>
+                        <div class="header-btns">
+                            <button class="find-more">Find More</button>
+                            <button class="contact-us">Contact Us</button>                      
+                        </div>
                     </div>
 
                     <button id="prev"><</button>
@@ -311,6 +347,7 @@ window.addEventListener('load', () => {
     const galleryButton = document.getElementById('gallery-button');
     const contactButton = document.getElementById('contact-button');
     let findMoreButtons = document.querySelectorAll('.find-more');
+    let contactUsButtons = document.querySelectorAll('.contact-us');
 
     logo.addEventListener('click', () => {
         location.reload();
@@ -331,6 +368,12 @@ window.addEventListener('load', () => {
     findMoreButtons.forEach(findMoreButton => {
         findMoreButton.addEventListener('click', () => {
             handleAboutPage();
+        });
+    });
+
+    contactUsButtons.forEach(contactUsButton => {
+        contactUsButton.addEventListener('click', () => {
+            handleContactPage();
         });
     });
 
@@ -408,7 +451,13 @@ window.addEventListener('load', () => {
                 <div id="gallery-page">
                     <h2>Gallery</h2>
 
+                    <h3>Works in progress</h3>
+
                     <div id="gallery-page-card"></div>
+
+                    <h3>Some done projects</h3>
+
+                    <div id="gallery-page-done"></div>
 
                     <footer>
                         <p>&copy; Ionut Cora, 2021</p> 
@@ -418,10 +467,18 @@ window.addEventListener('load', () => {
 
         const galleryPageCard = document.getElementById('gallery-page-card');
 
-            galleryPagePictures.forEach(galleryPagePicture => {
-                galleryPageCard.innerHTML += `
-                    <img src="${galleryPagePicture.image}">
-                `
+        galleryPagePictures.forEach(galleryPagePicture => {
+            galleryPageCard.innerHTML += `
+                <img src="${galleryPagePicture.image}">
+            `
+        });
+
+        const galleryPageDone = document.getElementById('gallery-page-done');
+
+        galleryPageDonePictures.forEach(galleryPageDonePicture => {
+            galleryPageDone.innerHTML += `
+                <img src="${galleryPageDonePicture.image}">
+            `
         });
     }
 

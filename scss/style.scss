@@ -27,10 +27,10 @@ nav {
         font-size: 1.3rem;
         white-space: nowrap;
         padding: auto;
-        color: $primary-color;
+        color: $sixth-color;
 
         &:hover {
-            color: $fourth-color;           
+            color: $fifth-color;           
         }
     }
 }
@@ -60,6 +60,10 @@ nav {
                 display: flex;
                 margin: 0 1.5rem;
 
+                &:hover {
+                    cursor: pointer;
+                }
+
                 ion-icon {
                     margin-right: 5px;
                     color: $primary-color;
@@ -86,17 +90,21 @@ nav {
                 ion-icon {
                     color: $primary-color;
                 }
+
+                &:hover {
+                    cursor: pointer;
+                }
               
             }
         }
 
         h1 {
             font-family: 'Tourney', cursive;
-            color: $primary-color;
+            color: $sixth-color;
             margin-right: 1.5rem;
 
             &:hover {
-                color: $fourth-color;
+                color: $fifth-color;
                 cursor: pointer;
             }
 
@@ -129,7 +137,7 @@ nav {
                     text-transform: uppercase;
     
                     @include mobile {
-                        font-size: 1.5rem;
+                        font-size: 2rem;
                     }
                 }
                 
@@ -137,26 +145,60 @@ nav {
                     font-size: 3rem;
     
                     @include mobile {
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                     }
                 }          
             }
 
-            .find-more {
-                width: 10rem;
-                height: 2.5rem;
-                margin-top: 1rem;
-                border: 0;
-                cursor: pointer;
-                background-color: $primary-color;
-                color: $third-color;
-                text-transform: uppercase;
-                font-weight: bold;
+            .header-btns {
+
+                .find-more {
+                    width: 10rem;
+                    height: 2.5rem;
+                    margin: 1rem;
+                    border: 0;
+                    cursor: pointer;
+                    background-color: $primary-color;
+                    color: $third-color;
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    @include mobile {
+                        margin: 0.5rem;
+                    }
+                }
+                
+                .find-more:hover {
+                    background-color: $sixth-color;
+                }
+    
+                .contact-us {
+                    width: 10rem;
+                    height: 2.5rem;
+                    margin: 1rem;
+                    border: 2px solid $sixth-color;
+                    cursor: pointer;
+                    background-color: transparent;
+                    color: $sixth-color;
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    @include mobile {
+                        margin: 0.5rem;
+                    }
+                }
+    
+                .contact-us:hover {
+                    background-color: $sixth-color;
+                    color: $third-color;
+                }
+
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
-            
-            .find-more:hover {
-                background-color: $fourth-color;
-            }
+
     
             .picture1,
             .picture2,
@@ -212,7 +254,7 @@ nav {
                 top: 47%;
 
                 &:hover {
-                    color: $fourth-color;
+                    color: $sixth-color;
                 }
             }
             
@@ -313,6 +355,11 @@ nav {
                             padding-left: 20%;
                             padding-top: 1.5rem;
                             color: $primary-color;
+
+                            @include mobile {
+                                width: 100%;
+                                padding-left: 30%;
+                            }
     
                             ion-icon {
                                 color: $primary-color;                           
@@ -401,7 +448,7 @@ nav {
                 width: 10rem;
                 height: 2.5rem;
                 cursor: pointer;
-                background-color: $third-color;
+                background-color: $fifth-color;
                 color: $primary-color;
                 border: 0;
                 margin: 1rem;
@@ -409,7 +456,8 @@ nav {
                 font-weight: bold;
     
                 &:hover {
-                    background-color: #003327;
+                    background-color: $sixth-color;
+                    color: $third-color;
                 }
             }
         }
@@ -479,7 +527,7 @@ nav {
                                 padding-bottom: 5rem;
                 
                                 .testimonial-card {
-                                    margin: 1rem 0;
+                                    margin: 2rem 0;
                                 }
                             }
 
@@ -505,7 +553,19 @@ nav {
                 }
             }
 
-            #gallery-page-card {
+            h3 {
+                text-align: center;
+                font-size: 2.5rem;
+                color: $third-color;
+                margin: 2rem 0;
+
+                @include mobile {
+                    font-size: 1.5rem;
+                }
+            }
+
+            #gallery-page-card,
+            #gallery-page-done {
                 display: flex;
                 flex-wrap: wrap;
     
@@ -577,20 +637,21 @@ nav {
                 display: flex;
                 flex-direction: column;
                 width: 50%;
-                padding-bottom: 5rem;
+                padding-bottom: 8rem;
 
                 input,
                 textarea,
                 button {
                     padding: 5px;
                     margin: 0.5rem 0;
+                    outline: 0;
                 }
 
                 button {
                     width: 10rem;
                     height: 2.5rem;
                     cursor: pointer;
-                    background-color: $third-color;
+                    background-color: $fifth-color;
                     color: $primary-color;
                     border: 0;
                     text-transform: uppercase;
@@ -598,7 +659,8 @@ nav {
                     margin: auto;
 
                     &:hover {
-                        background-color: #003327;
+                        background-color: $sixth-color;
+                        color: $third-color;
                     }
                 }
             }
@@ -613,7 +675,7 @@ nav {
 
     footer {
         text-align: center;
-        padding: 20px 0;
+        padding: 30px 0;
         background-color: $third-color;
 
         p {

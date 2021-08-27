@@ -38,11 +38,11 @@ nav li {
   font-size: 1.3rem;
   white-space: nowrap;
   padding: auto;
-  color: #fff;
+  color: #F2EDD7;
 }
 
 nav li:hover {
-  color: #ccfff3;
+  color: #A0937D;
 }
 
 .container {
@@ -93,6 +93,10 @@ nav li:hover {
   margin: 0 1.5rem;
 }
 
+.container #top-nav #contacts-top .phone-card:hover {
+  cursor: pointer;
+}
+
 .container #top-nav #contacts-top .phone-card ion-icon {
   margin-right: 5px;
   color: #fff;
@@ -124,14 +128,18 @@ nav li:hover {
   color: #fff;
 }
 
+.container #top-nav #contacts-top .contacts-card:hover {
+  cursor: pointer;
+}
+
 .container #top-nav h1 {
   font-family: 'Tourney', cursive;
-  color: #fff;
+  color: #F2EDD7;
   margin-right: 1.5rem;
 }
 
 .container #top-nav h1:hover {
-  color: #ccfff3;
+  color: #A0937D;
   cursor: pointer;
 }
 
@@ -171,7 +179,7 @@ nav li:hover {
 
 @media (max-width: 900px) {
   .container #full-content header .title h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -181,14 +189,14 @@ nav li:hover {
 
 @media (max-width: 900px) {
   .container #full-content header .title p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
-.container #full-content header .find-more {
+.container #full-content header .header-btns .find-more {
   width: 10rem;
   height: 2.5rem;
-  margin-top: 1rem;
+  margin: 1rem;
   border: 0;
   cursor: pointer;
   background-color: #fff;
@@ -197,8 +205,49 @@ nav li:hover {
   font-weight: bold;
 }
 
-.container #full-content header .find-more:hover {
-  background-color: #ccfff3;
+@media (max-width: 900px) {
+  .container #full-content header .header-btns .find-more {
+    margin: 0.5rem;
+  }
+}
+
+.container #full-content header .header-btns .find-more:hover {
+  background-color: #F2EDD7;
+}
+
+.container #full-content header .header-btns .contact-us {
+  width: 10rem;
+  height: 2.5rem;
+  margin: 1rem;
+  border: 2px solid #F2EDD7;
+  cursor: pointer;
+  background-color: transparent;
+  color: #F2EDD7;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .container #full-content header .header-btns .contact-us {
+    margin: 0.5rem;
+  }
+}
+
+.container #full-content header .header-btns .contact-us:hover {
+  background-color: #F2EDD7;
+  color: #005441;
+}
+
+@media (max-width: 900px) {
+  .container #full-content header .header-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .container #full-content header .picture1,
@@ -273,7 +322,7 @@ nav li:hover {
 
 .container #full-content header #prev:hover,
 .container #full-content header #next:hover {
-  color: #ccfff3;
+  color: #F2EDD7;
 }
 
 .container #full-content header #prev {
@@ -390,6 +439,13 @@ nav li:hover {
   color: #fff;
 }
 
+@media (max-width: 900px) {
+  .container #full-content #content #about .services-card ul li {
+    width: 100%;
+    padding-left: 30%;
+  }
+}
+
 .container #full-content #content #about .services-card ul li ion-icon {
   color: #fff;
   margin-right: 5px;
@@ -487,7 +543,7 @@ nav li:hover {
   width: 10rem;
   height: 2.5rem;
   cursor: pointer;
-  background-color: #005441;
+  background-color: #A0937D;
   color: #fff;
   border: 0;
   margin: 1rem;
@@ -496,7 +552,8 @@ nav li:hover {
 }
 
 .container #full-content .detail-button-div .detail-button:hover {
-  background-color: #003327;
+  background-color: #F2EDD7;
+  color: #005441;
 }
 
 .container #full-content #about-page {
@@ -572,7 +629,7 @@ nav li:hover {
 }
 
 .container #full-content #about-page #about-content #testimonials .testimonial-card {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .container #full-content #about-page footer {
@@ -594,7 +651,21 @@ nav li:hover {
   }
 }
 
-.container #full-content #gallery-page #gallery-page-card {
+.container #full-content #gallery-page h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #005441;
+  margin: 2rem 0;
+}
+
+@media (max-width: 900px) {
+  .container #full-content #gallery-page h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.container #full-content #gallery-page #gallery-page-card,
+.container #full-content #gallery-page #gallery-page-done {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,12 +673,14 @@ nav li:hover {
       flex-wrap: wrap;
 }
 
-.container #full-content #gallery-page #gallery-page-card img {
+.container #full-content #gallery-page #gallery-page-card img,
+.container #full-content #gallery-page #gallery-page-done img {
   width: 50%;
 }
 
 @media (max-width: 900px) {
-  .container #full-content #gallery-page #gallery-page-card img {
+  .container #full-content #gallery-page #gallery-page-card img,
+  .container #full-content #gallery-page #gallery-page-done img {
     width: 100%;
   }
 }
@@ -690,7 +763,7 @@ nav li:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
 }
 
 .container #full-content #contact-page form input,
@@ -698,13 +771,14 @@ nav li:hover {
 .container #full-content #contact-page form button {
   padding: 5px;
   margin: 0.5rem 0;
+  outline: 0;
 }
 
 .container #full-content #contact-page form button {
   width: 10rem;
   height: 2.5rem;
   cursor: pointer;
-  background-color: #005441;
+  background-color: #A0937D;
   color: #fff;
   border: 0;
   text-transform: uppercase;
@@ -713,7 +787,8 @@ nav li:hover {
 }
 
 .container #full-content #contact-page form button:hover {
-  background-color: #003327;
+  background-color: #F2EDD7;
+  color: #005441;
 }
 
 .container #full-content #contact-page footer {
@@ -724,7 +799,7 @@ nav li:hover {
 
 .container footer {
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 0;
   background-color: #005441;
 }
 
