@@ -193,6 +193,12 @@ nav li:hover {
   }
 }
 
+@media (max-width: 900px) {
+  .container #full-content header .title .title-paragraph {
+    display: none;
+  }
+}
+
 .container #full-content header .header-btns .find-more {
   width: 10rem;
   height: 2.5rem;
@@ -325,6 +331,13 @@ nav li:hover {
   color: #F2EDD7;
 }
 
+@media (max-width: 900px) {
+  .container #full-content header #prev,
+  .container #full-content header #next {
+    font-size: 2rem;
+  }
+}
+
 .container #full-content header #prev {
   left: 0;
 }
@@ -353,12 +366,12 @@ nav li:hover {
 
 .container #full-content header #pic2 {
   margin: 0;
-  background-color: #666666;
+  background-color: #A0937D;
 }
 
 .container #full-content header #pic3 {
   margin: 0 20px;
-  background-color: #666666;
+  background-color: #A0937D;
 }
 
 .container #full-content #content {
@@ -615,6 +628,13 @@ nav li:hover {
   padding-left: 20%;
   padding-top: 1.5rem;
   color: #fff;
+}
+
+@media (max-width: 900px) {
+  .container #full-content #about-page #about-content .services-card ul li {
+    width: 100%;
+    padding-left: 30%;
+  }
 }
 
 .container #full-content #about-page #about-content .services-card ul li ion-icon {

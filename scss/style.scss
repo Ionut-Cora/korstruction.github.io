@@ -147,7 +147,13 @@ nav {
                     @include mobile {
                         font-size: 1.5rem;
                     }
-                }          
+                }
+                
+                .title-paragraph {
+                    @include mobile {
+                        display: none;
+                    }
+                }
             }
 
             .header-btns {
@@ -256,6 +262,10 @@ nav {
                 &:hover {
                     color: $sixth-color;
                 }
+
+                @include mobile {
+                    font-size: 2rem;
+                }
             }
             
             #prev {
@@ -286,12 +296,12 @@ nav {
             
             #pic2 {
                 margin: 0;
-                background-color: $secondary-color;
+                background-color: $fifth-color;
             }
             
             #pic3 {
                 margin: 0 20px;
-                background-color: $secondary-color;
+                background-color: $fifth-color;
             }
         }
     
@@ -513,6 +523,12 @@ nav {
                                         padding-left: 20%;
                                         padding-top: 1.5rem;
                                         color: $primary-color;
+
+                                        @include mobile {
+                                            width: 100%;
+                                            padding-left: 30%;
+                                        }
+
                                         ion-icon {
                                             color: $primary-color;                           
                                             margin-right: 5px;

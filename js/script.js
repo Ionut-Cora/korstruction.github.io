@@ -75,6 +75,10 @@ const galleryPageDonePictures = [
     }
 ];
 
+// COLORS VARIABLES
+
+const fifthColor = '#A0937D';
+
 window.addEventListener('load', () => {
     root.innerHTML = `
         <nav>
@@ -112,7 +116,7 @@ window.addEventListener('load', () => {
                         <div class="title">
                             <p>Welcome to</p>
                             <h2>Korstruction London</h2>
-                            <p>Over 50 years experience in the construction industry</p>                  
+                            <p class="title-paragraph">Over 50 years experience in the construction industry</p>                  
                         </div>
                         <div class="header-btns">
                             <button class="find-more">Find More</button>
@@ -246,20 +250,20 @@ window.addEventListener('load', () => {
 
     function handlePics1() {
         pic1.style.backgroundColor = "#fff";
-        pic2.style.backgroundColor = "#666666";
-        pic3.style.backgroundColor = "#666666";
+        pic2.style.backgroundColor = fifthColor;
+        pic3.style.backgroundColor = fifthColor;
     }
 
     function handlePics2() {
         pic2.style.backgroundColor = "#fff";
-        pic1.style.backgroundColor = "#666666";
-        pic3.style.backgroundColor = "#666666";
+        pic1.style.backgroundColor = fifthColor;
+        pic3.style.backgroundColor = fifthColor;
     }
 
     function handlePics3() {
         pic3.style.backgroundColor = "#fff";
-        pic1.style.backgroundColor = "#666666";
-        pic2.style.backgroundColor = "#666666";
+        pic1.style.backgroundColor = fifthColor;
+        pic2.style.backgroundColor = fifthColor;
     }
 
     function handleDesign() {
