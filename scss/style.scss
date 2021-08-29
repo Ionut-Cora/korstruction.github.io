@@ -68,6 +68,10 @@ nav {
                     margin-right: 5px;
                     color: $primary-color;
 
+                    &:hover {
+                        color: $fifth-color;
+                    }
+
                     @include mobile {
                         font-size: 0.9rem;
                     }
@@ -75,6 +79,10 @@ nav {
 
                 p {
                     color: $primary-color;
+
+                    &:hover {
+                        color: $fifth-color;
+                    }
 
                     @include mobile {
                         font-size: 0.9rem;
@@ -89,6 +97,10 @@ nav {
             .contacts-card {
                 ion-icon {
                     color: $primary-color;
+
+                    &:hover {
+                        color: $fifth-color;
+                    }
                 }
 
                 &:hover {
