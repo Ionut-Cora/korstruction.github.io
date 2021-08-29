@@ -523,8 +523,8 @@ window.addEventListener('load', () => {
                         <div id="office-hours">
                             <h3>Office Hours:</h3>
                             <ul>
-                                <li>Monday - Friday: 08:00AM - 18:00PM</li>
-                                <li>Saturday: 09:00AM - 15:00PM</li>
+                                <li>Monday - Friday: 08:00AM - 6:00PM</li>
+                                <li>Saturday: 09:00AM - 3:00PM</li>
                                 <li>Sunday: Closed</li>                       
                             </ul>
                         </div>                  
