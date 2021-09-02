@@ -28,9 +28,10 @@ nav {
         white-space: nowrap;
         padding: auto;
         color: $sixth-color;
+        text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
         &:hover {
-            color: $fifth-color;           
+            color: $fourth-color;           
         }
     }
 }
@@ -67,9 +68,10 @@ nav {
                 ion-icon {
                     margin-right: 5px;
                     color: $primary-color;
+                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
                     &:hover {
-                        color: $fifth-color;
+                        color: $fourth-color;
                     }
 
                     @include mobile {
@@ -79,9 +81,10 @@ nav {
 
                 p {
                     color: $primary-color;
+                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
                     &:hover {
-                        color: $fifth-color;
+                        color: $fourth-color;
                     }
 
                     @include mobile {
@@ -99,7 +102,7 @@ nav {
                     color: $primary-color;
 
                     &:hover {
-                        color: $fifth-color;
+                        color: $fourth-color;
                     }
                 }
 
@@ -111,12 +114,17 @@ nav {
         }
 
         h1 {
-            font-family: 'Tourney', cursive;
-            color: $sixth-color;
+            font-family: 'Inknut Antiqua', serif;
+            background: -webkit-linear-gradient(#eee, $fourth-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             margin-right: 1.5rem;
+            text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
             &:hover {
-                color: $fifth-color;
+                background: -webkit-linear-gradient(#eee, $sixth-color);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 cursor: pointer;
             }
 
@@ -147,6 +155,7 @@ nav {
                 h2 {
                     font-size: 4rem;
                     text-transform: uppercase;
+                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
     
                     @include mobile {
                         font-size: 2rem;
@@ -180,6 +189,8 @@ nav {
                     color: $third-color;
                     text-transform: uppercase;
                     font-weight: bold;
+                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
                     @include mobile {
                         margin: 0.5rem;
@@ -200,6 +211,8 @@ nav {
                     color: $sixth-color;
                     text-transform: uppercase;
                     font-weight: bold;
+                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
                     @include mobile {
                         margin: 0.5rem;
@@ -327,6 +340,7 @@ nav {
                     text-align: center;
                     color: $third-color;
                     font-size: 3rem;
+                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
                     @include mobile {
                         font-size: 2rem;
@@ -364,6 +378,7 @@ nav {
 
                     h2 {
                         color: $primary-color;
+                        text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                     }
     
                     ul {
@@ -401,6 +416,7 @@ nav {
                 text-align: center;
                 font-size: 3rem; 
                 margin: 3rem 0;
+                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -428,6 +444,7 @@ nav {
                 font-size: 3rem;
                 text-align: center;
                 margin: 2rem 0;
+                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -476,9 +493,11 @@ nav {
                 margin: 1rem;
                 text-transform: uppercase;
                 font-weight: bold;
+                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     
                 &:hover {
-                    background-color: $sixth-color;
+                    background-color: $fourth-color;
                     color: $third-color;
                 }
             }
@@ -498,6 +517,7 @@ nav {
                                 text-align: center;
                                 font-size: 4rem;
                                 margin: 2rem 0;
+                                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                                 
                                 @include mobile {
                                     font-size: 2rem;
@@ -521,6 +541,7 @@ nav {
                 
                                 h2 {
                                     color: $primary-color;
+                                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                                 }
                 
                                 ul {
@@ -553,6 +574,10 @@ nav {
                                 width: 80%;
                                 margin: auto;
                                 padding-bottom: 5rem;
+
+                                h2 {
+                                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                                }
                 
                                 .testimonial-card {
                                     margin: 2rem 0;
@@ -575,6 +600,7 @@ nav {
                 text-align: center;
                 font-size: 4rem;
                 margin: 2rem 0;
+                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -586,6 +612,7 @@ nav {
                 font-size: 2.5rem;
                 color: $third-color;
                 margin: 2rem 0;
+                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
                 @include mobile {
                     font-size: 1.5rem;
@@ -617,6 +644,7 @@ nav {
                 text-align: center;
                 font-size: 4rem;
                 margin: 2rem 0;
+                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -685,9 +713,11 @@ nav {
                     text-transform: uppercase;
                     font-weight: bold;
                     margin: auto;
+                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
                     &:hover {
-                        background-color: $sixth-color;
+                        background-color: $fourth-color;
                         color: $third-color;
                     }
                 }

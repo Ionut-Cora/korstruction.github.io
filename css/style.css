@@ -39,10 +39,11 @@ nav li {
   white-space: nowrap;
   padding: auto;
   color: #F2EDD7;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 nav li:hover {
-  color: #A0937D;
+  color: #9EB456;
 }
 
 .container {
@@ -100,10 +101,11 @@ nav li:hover {
 .container #top-nav #contacts-top .phone-card ion-icon {
   margin-right: 5px;
   color: #fff;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 .container #top-nav #contacts-top .phone-card ion-icon:hover {
-  color: #A0937D;
+  color: #9EB456;
 }
 
 @media (max-width: 900px) {
@@ -114,10 +116,11 @@ nav li:hover {
 
 .container #top-nav #contacts-top .phone-card p {
   color: #fff;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 .container #top-nav #contacts-top .phone-card p:hover {
-  color: #A0937D;
+  color: #9EB456;
 }
 
 @media (max-width: 900px) {
@@ -137,7 +140,7 @@ nav li:hover {
 }
 
 .container #top-nav #contacts-top .contacts-card ion-icon:hover {
-  color: #A0937D;
+  color: #9EB456;
 }
 
 .container #top-nav #contacts-top .contacts-card:hover {
@@ -145,13 +148,18 @@ nav li:hover {
 }
 
 .container #top-nav h1 {
-  font-family: 'Tourney', cursive;
-  color: #F2EDD7;
+  font-family: 'Inknut Antiqua', serif;
+  background: -webkit-linear-gradient(#eee, #9EB456);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-right: 1.5rem;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 .container #top-nav h1:hover {
-  color: #A0937D;
+  background: -webkit-linear-gradient(#eee, #F2EDD7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 
@@ -187,6 +195,7 @@ nav li:hover {
 .container #full-content header .title h2 {
   font-size: 4rem;
   text-transform: uppercase;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -221,6 +230,9 @@ nav li:hover {
   color: #005441;
   text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 @media (max-width: 900px) {
@@ -243,6 +255,9 @@ nav li:hover {
   color: #F2EDD7;
   text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 @media (max-width: 900px) {
@@ -398,6 +413,7 @@ nav li:hover {
   text-align: center;
   color: #005441;
   font-size: 3rem;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -445,6 +461,7 @@ nav li:hover {
 
 .container #full-content #content #about .services-card h2 {
   color: #fff;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 .container #full-content #content #about .services-card ul {
@@ -481,6 +498,7 @@ nav li:hover {
   text-align: center;
   font-size: 3rem;
   margin: 3rem 0;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -512,6 +530,7 @@ nav li:hover {
   font-size: 3rem;
   text-align: center;
   margin: 2rem 0;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -574,10 +593,13 @@ nav li:hover {
   margin: 1rem;
   text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .container #full-content .detail-button-div .detail-button:hover {
-  background-color: #F2EDD7;
+  background-color: #9EB456;
   color: #005441;
 }
 
@@ -595,6 +617,7 @@ nav li:hover {
   text-align: center;
   font-size: 4rem;
   margin: 2rem 0;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -622,6 +645,7 @@ nav li:hover {
 
 .container #full-content #about-page #about-content .services-card h2 {
   color: #fff;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 .container #full-content #about-page #about-content .services-card ul {
@@ -660,6 +684,10 @@ nav li:hover {
   padding-bottom: 5rem;
 }
 
+.container #full-content #about-page #about-content #testimonials h2 {
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+}
+
 .container #full-content #about-page #about-content #testimonials .testimonial-card {
   margin: 2rem 0;
 }
@@ -675,6 +703,7 @@ nav li:hover {
   text-align: center;
   font-size: 4rem;
   margin: 2rem 0;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -688,6 +717,7 @@ nav li:hover {
   font-size: 2.5rem;
   color: #005441;
   margin: 2rem 0;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -735,6 +765,7 @@ nav li:hover {
   text-align: center;
   font-size: 4rem;
   margin: 2rem 0;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -816,10 +847,13 @@ nav li:hover {
   text-transform: uppercase;
   font-weight: bold;
   margin: auto;
+  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .container #full-content #contact-page form button:hover {
-  background-color: #F2EDD7;
+  background-color: #9EB456;
   color: #005441;
 }
 
