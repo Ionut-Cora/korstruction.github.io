@@ -165,7 +165,8 @@ nav li:hover {
 
 @media (max-width: 900px) {
   .container #top-nav h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
   }
 }
 
