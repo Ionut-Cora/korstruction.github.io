@@ -93,19 +93,19 @@ window.addEventListener('load', () => {
         <div class="container">
 
             <div id="top-nav">
+
                 <div id="contacts-top">
                     <div class="phone-card">
                         <ion-icon name="call-outline"></ion-icon>
                         <p>0900 900 900</p>
-                    </div>
-                    <div class="contacts-card">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <ion-icon name="location-outline"></ion-icon>
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </div>               
+                    </div>            
                 </div>
                 
-                <h1 id="logo">Korstruction</h1>
+                <div id="logo">
+                    <h1 id="logo">Korstruction</h1>              
+                </div>
+
+                <ion-icon name="menu-outline" id="menu-btn"></ion-icon>
             </div>
 
             <div id="full-content">
@@ -236,6 +236,20 @@ window.addEventListener('load', () => {
         </div>
 
     `;
+
+    const menuBtn = document.getElementById('menu-btn');
+    const nav = document.querySelector('nav');
+    let isClicked = false;
+
+    menuBtn.addEventListener('click', () => {
+        if (!isClicked) {
+            nav.style.display = 'block';
+            isClicked = true;
+        } else {
+            nav.style.display = 'none';
+            isClicked = false;
+        }
+    }, false);
 
     const picture1 = document.querySelector('.picture1');
     const picture2 = document.querySelector('.picture2');
@@ -382,6 +396,9 @@ window.addEventListener('load', () => {
     });
 
     function handleAboutPage() {
+        nav.style.display = 'none';
+        isClicked = false;
+
         fullContent.innerHTML = `
                 <div id="about-page">
                     <div id="about-content">
@@ -451,6 +468,9 @@ window.addEventListener('load', () => {
     });
 
     function handleGalleryPage() {
+        nav.style.display = 'none';
+        isClicked = false;
+
         fullContent.innerHTML = `
                 <div id="gallery-page">
                     <h2>Gallery</h2>
@@ -495,6 +515,9 @@ window.addEventListener('load', () => {
     });
 
     function handleContactPage() {
+        nav.style.display = 'none';
+        isClicked = false;
+
         fullContent.innerHTML = `
                 <div id="contact-page">
                     <h2>Contact Us</h2>

@@ -3,14 +3,19 @@
 @import './mixins';
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 nav {
     height: 100vh;
-    width: 10vw;
-    position: fixed;
+    width: 20vw;
+    // position: fixed;
+    position: absolute;
+    right: 0;
     background-color: $third-color;
+    z-index: 100;
+    margin-top: 80px;
+    display: none;
 
     ul {
         min-height: 100%;
@@ -22,22 +27,30 @@ nav {
     
     li {
         list-style-type: none;
-        transform: rotate(270deg);
+        // transform: rotate(270deg);
         cursor: pointer;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         white-space: nowrap;
-        padding: auto;
-        color: $sixth-color;
-        text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+        // padding: auto;
+        // color: $sixth-color;
+        color: #000;
+        // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+        font-weight: bold;
+        text-transform: uppercase;
 
         &:hover {
-            color: $fourth-color;           
+            color: $fourth-color;
+            border-bottom: 3px solid #000;          
         }
+    }
+
+    @include mobile {
+        width: 100%;
     }
 }
 
 .container {
-    margin-left: 10vw;
+    // margin-left: 10vw;
     min-height: 100vh;
     position: relative;
 
@@ -47,11 +60,14 @@ nav {
         align-items: center;
         height: 5rem;
         background-color: $third-color;
+        position: relative;
 
         #contacts-top {
             display: flex;
             justify-content: center;
             align-items: center;
+            // width: 15%;
+            position: absolute;
 
             @include mobile {
                 flex-direction: column;
@@ -67,8 +83,9 @@ nav {
 
                 ion-icon {
                     margin-right: 5px;
-                    color: $primary-color;
-                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    font-size: 1.5rem;
+                    // color: $primary-color;
+                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
                     &:hover {
                         color: $fourth-color;
@@ -80,8 +97,9 @@ nav {
                 }
 
                 p {
-                    color: $primary-color;
-                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    // color: $primary-color;
+                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    font-size: 1.5rem;
 
                     &:hover {
                         color: $fourth-color;
@@ -96,41 +114,51 @@ nav {
                     margin: 0 0.5rem;
                 }
             }
+        }
 
-            .contacts-card {
-                ion-icon {
-                    color: $primary-color;
+        #logo {
+            position: relative;
+            margin: auto;
 
-                    &:hover {
-                        color: $fourth-color;
-                    }
-                }
-
+            h1 {
+                // font-family: 'Inknut Antiqua', serif;
+                // background: -webkit-linear-gradient(#eee, $fourth-color);
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
+                // margin-right: 1.5rem;
+                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                text-transform: uppercase;
+                border: solid 4px #000;
+                padding: 5px;
+                // margin-right: 10rem;
+    
                 &:hover {
+                    // background: -webkit-linear-gradient(#eee, $sixth-color);
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
                     cursor: pointer;
+                    background-color: #000;
+                    color: $third-color;
                 }
-              
+    
+                @include mobile {
+                    font-size: 1.3rem;
+                    margin-right: 0.5rem;
+                }
             }
         }
 
-        h1 {
-            font-family: 'Inknut Antiqua', serif;
-            background: -webkit-linear-gradient(#eee, $fourth-color);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-right: 1.5rem;
-            text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+
+        #menu-btn {
+            font-size: 3rem;
+            // padding-right: 1rem;
+            width: 5%;
+            position: absolute;
+            right: 0;
 
             &:hover {
-                background: -webkit-linear-gradient(#eee, $sixth-color);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
                 cursor: pointer;
-            }
-
-            @include mobile {
-                font-size: 1.3rem;
-                margin-right: 0.5rem;
+                color: $fourth-color;
             }
         }
     }
@@ -156,7 +184,7 @@ nav {
                 h2 {
                     font-size: 4rem;
                     text-transform: uppercase;
-                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
     
                     @include mobile {
                         font-size: 2rem;
@@ -182,15 +210,16 @@ nav {
 
                 .find-more {
                     width: 10rem;
-                    height: 2.5rem;
+                    height: 3rem;
                     margin: 1rem;
                     border: 0;
                     cursor: pointer;
                     background-color: $primary-color;
-                    color: $third-color;
+                    color: #000;
+                    font-size: 1rem;
                     text-transform: uppercase;
                     font-weight: bold;
-                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
                     @include mobile {
@@ -199,20 +228,22 @@ nav {
                 }
                 
                 .find-more:hover {
-                    background-color: $sixth-color;
+                    background-color: $third-color;
                 }
     
                 .contact-us {
                     width: 10rem;
-                    height: 2.5rem;
+                    height: 3rem;
                     margin: 1rem;
-                    border: 2px solid $sixth-color;
+                    border: 2px solid #fff;
                     cursor: pointer;
                     background-color: transparent;
-                    color: $sixth-color;
+                    // color: $sixth-color;
+                    color: #fff;
+                    font-size: 1rem;
                     text-transform: uppercase;
                     font-weight: bold;
-                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
                     @include mobile {
@@ -221,8 +252,10 @@ nav {
                 }
     
                 .contact-us:hover {
-                    background-color: $sixth-color;
-                    color: $third-color;
+                    background-color: $third-color;
+                    border-color: $third-color;
+                    // color: $third-color;
+                    color: #000;
                 }
 
                 @include mobile {
@@ -244,7 +277,7 @@ nav {
             }
             
             .picture1 {
-                background-image: linear-gradient(rgba(0, 84, 65,  0.7), rgba(0, 84, 65,  0.7)), url(../images/pic1.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic1.jpg);
                 height: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -252,7 +285,7 @@ nav {
             }
             
             .picture2 {
-                background-image: linear-gradient(rgba(0, 84, 65,  0.7), rgba(0, 84, 65,  0.7)), url(../images/pic2.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic2.jpg);
                 height: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -260,7 +293,7 @@ nav {
             }
             
             .picture3 {
-                background-image: linear-gradient(rgba(0, 84, 65,  0.7), rgba(0, 84, 65,  0.7)), url(../images/pic3.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic3.jpg);
                 height: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -322,12 +355,12 @@ nav {
             
             #pic2 {
                 margin: 0;
-                background-color: $fifth-color;
+                background-color: $secondary-color;
             }
             
             #pic3 {
                 margin: 0 20px;
-                background-color: $fifth-color;
+                background-color: $secondary-color;
             }
         }
     
@@ -339,9 +372,9 @@ nav {
     
                 h2 {
                     text-align: center;
-                    color: $third-color;
-                    font-size: 3rem;
-                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    color: #000;
+                    font-size: 5rem;
+                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
                     @include mobile {
                         font-size: 2rem;
@@ -378,8 +411,9 @@ nav {
                     background-color: $third-color;
 
                     h2 {
-                        color: $primary-color;
-                        text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                        // color: $primary-color;
+                        // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                        color: #000;
                     }
     
                     ul {
@@ -392,7 +426,7 @@ nav {
                             font-size: 1.2rem;
                             padding-left: 20%;
                             padding-top: 1.5rem;
-                            color: $primary-color;
+                            // color: $primary-color;
 
                             @include mobile {
                                 width: 100%;
@@ -400,7 +434,7 @@ nav {
                             }
     
                             ion-icon {
-                                color: $primary-color;                           
+                                // color: $primary-color;                           
                                 margin-right: 5px;
                             }                   
                         }
@@ -413,11 +447,11 @@ nav {
         
         #gallery {
             h2 {
-                color: $third-color;
+                color: #000;
                 text-align: center;
-                font-size: 3rem; 
-                margin: 3rem 0;
-                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                font-size: 5rem; 
+                margin-bottom: 3rem;
+                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -441,11 +475,11 @@ nav {
         #contact {
     
             h2 {
-                color: $third-color;
-                font-size: 3rem;
+                color: #000;
+                font-size: 5rem;
                 text-align: center;
                 margin: 2rem 0;
-                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -486,7 +520,8 @@ nav {
             
             .detail-button {
                 width: 10rem;
-                height: 2.5rem;
+                height: 3rem;
+                font-size: 1rem;
                 cursor: pointer;
                 background-color: $fifth-color;
                 color: $primary-color;
@@ -494,7 +529,7 @@ nav {
                 margin: 1rem;
                 text-transform: uppercase;
                 font-weight: bold;
-                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     
                 &:hover {
@@ -514,11 +549,11 @@ nav {
                 padding-bottom: 2.5rem;
                 
                             h2 {
-                                color: $third-color; 
+                                color: #000; 
                                 text-align: center;
-                                font-size: 4rem;
+                                font-size: 5rem;
                                 margin: 2rem 0;
-                                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                                 
                                 @include mobile {
                                     font-size: 2rem;
@@ -542,7 +577,7 @@ nav {
                 
                                 h2 {
                                     color: $primary-color;
-                                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                                 }
                 
                                 ul {
@@ -577,7 +612,7 @@ nav {
                                 padding-bottom: 5rem;
 
                                 h2 {
-                                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                                 }
                 
                                 .testimonial-card {
@@ -597,11 +632,11 @@ nav {
         #gallery-page {
 
             h2 {
-                color: $third-color; 
+                color: #000; 
                 text-align: center;
-                font-size: 4rem;
+                font-size: 5rem;
                 margin: 2rem 0;
-                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -610,10 +645,10 @@ nav {
 
             h3 {
                 text-align: center;
-                font-size: 2.5rem;
-                color: $third-color;
+                font-size: 3rem;
+                color: #000;
                 margin: 2rem 0;
-                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
                 @include mobile {
                     font-size: 1.5rem;
@@ -641,11 +676,11 @@ nav {
             align-items: center;
 
             h2 {
-                color: $third-color; 
+                color: #000; 
                 text-align: center;
-                font-size: 4rem;
+                font-size: 5rem;
                 margin: 2rem 0;
-                text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -714,7 +749,7 @@ nav {
                     text-transform: uppercase;
                     font-weight: bold;
                     margin: auto;
-                    text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
                     &:hover {
@@ -738,7 +773,7 @@ nav {
         background-color: $third-color;
 
         p {
-            color: $primary-color;
+            color: #000;
         }
     }
 }

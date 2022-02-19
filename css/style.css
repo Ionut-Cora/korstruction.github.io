@@ -4,14 +4,18 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 nav {
   height: 100vh;
-  width: 10vw;
-  position: fixed;
-  background-color: #005441;
+  width: 20vw;
+  position: absolute;
+  right: 0;
+  background-color: #fd0;
+  z-index: 100;
+  margin-top: 80px;
+  display: none;
 }
 
 nav ul {
@@ -32,22 +36,26 @@ nav ul {
 
 nav li {
   list-style-type: none;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   white-space: nowrap;
-  padding: auto;
-  color: #F2EDD7;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 nav li:hover {
-  color: #9EB456;
+  color: #2A2E34;
+  border-bottom: 3px solid #000;
+}
+
+@media (max-width: 900px) {
+  nav {
+    width: 100%;
+  }
 }
 
 .container {
-  margin-left: 10vw;
   min-height: 100vh;
   position: relative;
 }
@@ -63,7 +71,8 @@ nav li:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 5rem;
-  background-color: #005441;
+  background-color: #fd0;
+  position: relative;
 }
 
 .container #top-nav #contacts-top {
@@ -76,6 +85,7 @@ nav li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
 }
 
 @media (max-width: 900px) {
@@ -100,12 +110,11 @@ nav li:hover {
 
 .container #top-nav #contacts-top .phone-card ion-icon {
   margin-right: 5px;
-  color: #fff;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+  font-size: 1.5rem;
 }
 
 .container #top-nav #contacts-top .phone-card ion-icon:hover {
-  color: #9EB456;
+  color: #2A2E34;
 }
 
 @media (max-width: 900px) {
@@ -115,12 +124,11 @@ nav li:hover {
 }
 
 .container #top-nav #contacts-top .phone-card p {
-  color: #fff;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+  font-size: 1.5rem;
 }
 
 .container #top-nav #contacts-top .phone-card p:hover {
-  color: #9EB456;
+  color: #2A2E34;
 }
 
 @media (max-width: 900px) {
@@ -135,39 +143,40 @@ nav li:hover {
   }
 }
 
-.container #top-nav #contacts-top .contacts-card ion-icon {
-  color: #fff;
+.container #top-nav #logo {
+  position: relative;
+  margin: auto;
 }
 
-.container #top-nav #contacts-top .contacts-card ion-icon:hover {
-  color: #9EB456;
+.container #top-nav #logo h1 {
+  text-transform: uppercase;
+  border: solid 4px #000;
+  padding: 5px;
 }
 
-.container #top-nav #contacts-top .contacts-card:hover {
+.container #top-nav #logo h1:hover {
   cursor: pointer;
-}
-
-.container #top-nav h1 {
-  font-family: 'Inknut Antiqua', serif;
-  background: -webkit-linear-gradient(#eee, #9EB456);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-right: 1.5rem;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
-}
-
-.container #top-nav h1:hover {
-  background: -webkit-linear-gradient(#eee, #F2EDD7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
+  background-color: #000;
+  color: #fd0;
 }
 
 @media (max-width: 900px) {
-  .container #top-nav h1 {
+  .container #top-nav #logo h1 {
     font-size: 1.3rem;
     margin-right: 0.5rem;
   }
+}
+
+.container #top-nav #menu-btn {
+  font-size: 3rem;
+  width: 5%;
+  position: absolute;
+  right: 0;
+}
+
+.container #top-nav #menu-btn:hover {
+  cursor: pointer;
+  color: #2A2E34;
 }
 
 .container #full-content {
@@ -196,7 +205,6 @@ nav li:hover {
 .container #full-content header .title h2 {
   font-size: 4rem;
   text-transform: uppercase;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -223,15 +231,15 @@ nav li:hover {
 
 .container #full-content header .header-btns .find-more {
   width: 10rem;
-  height: 2.5rem;
+  height: 3rem;
   margin: 1rem;
   border: 0;
   cursor: pointer;
   background-color: #fff;
-  color: #005441;
+  color: #000;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -243,20 +251,20 @@ nav li:hover {
 }
 
 .container #full-content header .header-btns .find-more:hover {
-  background-color: #F2EDD7;
+  background-color: #fd0;
 }
 
 .container #full-content header .header-btns .contact-us {
   width: 10rem;
-  height: 2.5rem;
+  height: 3rem;
   margin: 1rem;
-  border: 2px solid #F2EDD7;
+  border: 2px solid #fff;
   cursor: pointer;
   background-color: transparent;
-  color: #F2EDD7;
+  color: #fff;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -268,8 +276,9 @@ nav li:hover {
 }
 
 .container #full-content header .header-btns .contact-us:hover {
-  background-color: #F2EDD7;
-  color: #005441;
+  background-color: #fd0;
+  border-color: #fd0;
+  color: #000;
 }
 
 @media (max-width: 900px) {
@@ -303,8 +312,8 @@ nav li:hover {
 }
 
 .container #full-content header .picture1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 84, 65, 0.7)), to(rgba(0, 84, 65, 0.7))), url(../images/pic1.jpg);
-  background-image: linear-gradient(rgba(0, 84, 65, 0.7), rgba(0, 84, 65, 0.7)), url(../images/pic1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/pic1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic1.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -312,8 +321,8 @@ nav li:hover {
 }
 
 .container #full-content header .picture2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 84, 65, 0.7)), to(rgba(0, 84, 65, 0.7))), url(../images/pic2.jpg);
-  background-image: linear-gradient(rgba(0, 84, 65, 0.7), rgba(0, 84, 65, 0.7)), url(../images/pic2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/pic2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic2.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -321,8 +330,8 @@ nav li:hover {
 }
 
 .container #full-content header .picture3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 84, 65, 0.7)), to(rgba(0, 84, 65, 0.7))), url(../images/pic3.jpg);
-  background-image: linear-gradient(rgba(0, 84, 65, 0.7), rgba(0, 84, 65, 0.7)), url(../images/pic3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/pic3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic3.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -412,9 +421,8 @@ nav li:hover {
 
 .container #full-content #content #about h2 {
   text-align: center;
-  color: #005441;
-  font-size: 3rem;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+  color: #000;
+  font-size: 5rem;
 }
 
 @media (max-width: 900px) {
@@ -451,18 +459,17 @@ nav li:hover {
 
 .container #full-content #content #about #about-cards .card h3 {
   text-align: center;
-  color: #005441;
+  color: #fd0;
   font-size: 1.5rem;
 }
 
 .container #full-content #content #about .services-card {
   padding: 2rem 0;
-  background-color: #005441;
+  background-color: #fd0;
 }
 
 .container #full-content #content #about .services-card h2 {
-  color: #fff;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+  color: #000;
 }
 
 .container #full-content #content #about .services-card ul {
@@ -479,7 +486,6 @@ nav li:hover {
   font-size: 1.2rem;
   padding-left: 20%;
   padding-top: 1.5rem;
-  color: #fff;
 }
 
 @media (max-width: 900px) {
@@ -490,16 +496,14 @@ nav li:hover {
 }
 
 .container #full-content #content #about .services-card ul li ion-icon {
-  color: #fff;
   margin-right: 5px;
 }
 
 .container #full-content #gallery h2 {
-  color: #005441;
+  color: #000;
   text-align: center;
-  font-size: 3rem;
-  margin: 3rem 0;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
+  font-size: 5rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 900px) {
@@ -527,11 +531,10 @@ nav li:hover {
 }
 
 .container #full-content #contact h2 {
-  color: #005441;
-  font-size: 3rem;
+  color: #000;
+  font-size: 5rem;
   text-align: center;
   margin: 2rem 0;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -560,7 +563,7 @@ nav li:hover {
 }
 
 .container #full-content #contact #big-contact .contact-card ion-icon {
-  color: #005441;
+  color: #fd0;
   margin-right: 5px;
 }
 
@@ -586,22 +589,22 @@ nav li:hover {
 
 .container #full-content .detail-button-div .detail-button {
   width: 10rem;
-  height: 2.5rem;
+  height: 3rem;
+  font-size: 1rem;
   cursor: pointer;
-  background-color: #A0937D;
+  background-color: #003566;
   color: #fff;
   border: 0;
   margin: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .container #full-content .detail-button-div .detail-button:hover {
-  background-color: #9EB456;
-  color: #005441;
+  background-color: #2A2E34;
+  color: #fd0;
 }
 
 .container #full-content #about-page {
@@ -614,11 +617,10 @@ nav li:hover {
 }
 
 .container #full-content #about-page #about-content h2 {
-  color: #005441;
+  color: #000;
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 2rem 0;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -646,7 +648,6 @@ nav li:hover {
 
 .container #full-content #about-page #about-content .services-card h2 {
   color: #fff;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 .container #full-content #about-page #about-content .services-card ul {
@@ -685,10 +686,6 @@ nav li:hover {
   padding-bottom: 5rem;
 }
 
-.container #full-content #about-page #about-content #testimonials h2 {
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
-}
-
 .container #full-content #about-page #about-content #testimonials .testimonial-card {
   margin: 2rem 0;
 }
@@ -700,11 +697,10 @@ nav li:hover {
 }
 
 .container #full-content #gallery-page h2 {
-  color: #005441;
+  color: #000;
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 2rem 0;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -715,10 +711,9 @@ nav li:hover {
 
 .container #full-content #gallery-page h3 {
   text-align: center;
-  font-size: 2.5rem;
-  color: #005441;
+  font-size: 3rem;
+  color: #000;
   margin: 2rem 0;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -762,11 +757,10 @@ nav li:hover {
 }
 
 .container #full-content #contact-page h2 {
-  color: #005441;
+  color: #000;
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 2rem 0;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 }
 
 @media (max-width: 900px) {
@@ -798,7 +792,7 @@ nav li:hover {
 }
 
 .container #full-content #contact-page #contact-details #contact-cards .contact-card ion-icon {
-  color: #005441;
+  color: #fd0;
   margin-right: 5px;
 }
 
@@ -842,20 +836,19 @@ nav li:hover {
   width: 10rem;
   height: 2.5rem;
   cursor: pointer;
-  background-color: #A0937D;
+  background-color: #003566;
   color: #fff;
   border: 0;
   text-transform: uppercase;
   font-weight: bold;
   margin: auto;
-  text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .container #full-content #contact-page form button:hover {
-  background-color: #9EB456;
-  color: #005441;
+  background-color: #2A2E34;
+  color: #fd0;
 }
 
 .container #full-content #contact-page footer {
@@ -867,10 +860,10 @@ nav li:hover {
 .container footer {
   text-align: center;
   padding: 30px 0;
-  background-color: #005441;
+  background-color: #fd0;
 }
 
 .container footer p {
-  color: #fff;
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
