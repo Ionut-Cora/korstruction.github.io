@@ -119,7 +119,7 @@ nav li:hover {
 
 @media (max-width: 900px) {
   .container #top-nav #contacts-top .phone-card ion-icon {
-    font-size: 0.9rem;
+    display: none;
   }
 }
 
@@ -177,6 +177,12 @@ nav li:hover {
 .container #top-nav #menu-btn:hover {
   cursor: pointer;
   color: #2A2E34;
+}
+
+@media (max-width: 900px) {
+  .container #top-nav #menu-btn {
+    padding-right: 10px;
+  }
 }
 
 .container #full-content {

@@ -9,7 +9,6 @@ body {
 nav {
     height: 100vh;
     width: 20vw;
-    // position: fixed;
     position: absolute;
     right: 0;
     background-color: $third-color;
@@ -27,14 +26,10 @@ nav {
     
     li {
         list-style-type: none;
-        // transform: rotate(270deg);
         cursor: pointer;
         font-size: 1.5rem;
         white-space: nowrap;
-        // padding: auto;
-        // color: $sixth-color;
         color: #000;
-        // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
         font-weight: bold;
         text-transform: uppercase;
 
@@ -50,7 +45,6 @@ nav {
 }
 
 .container {
-    // margin-left: 10vw;
     min-height: 100vh;
     position: relative;
 
@@ -66,7 +60,6 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
-            // width: 15%;
             position: absolute;
 
             @include mobile {
@@ -84,21 +77,17 @@ nav {
                 ion-icon {
                     margin-right: 5px;
                     font-size: 1.5rem;
-                    // color: $primary-color;
-                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
                     &:hover {
                         color: $fourth-color;
                     }
 
                     @include mobile {
-                        font-size: 0.9rem;
+                        display: none;
                     }
                 }
 
                 p {
-                    // color: $primary-color;
-                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                     font-size: 1.5rem;
 
                     &:hover {
@@ -121,21 +110,12 @@ nav {
             margin: auto;
 
             h1 {
-                // font-family: 'Inknut Antiqua', serif;
-                // background: -webkit-linear-gradient(#eee, $fourth-color);
-                // -webkit-background-clip: text;
-                // -webkit-text-fill-color: transparent;
-                // margin-right: 1.5rem;
-                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 text-transform: uppercase;
                 border: solid 4px #000;
                 padding: 5px;
                 // margin-right: 10rem;
     
                 &:hover {
-                    // background: -webkit-linear-gradient(#eee, $sixth-color);
-                    // -webkit-background-clip: text;
-                    // -webkit-text-fill-color: transparent;
                     cursor: pointer;
                     background-color: #000;
                     color: $third-color;
@@ -151,7 +131,6 @@ nav {
 
         #menu-btn {
             font-size: 3rem;
-            // padding-right: 1rem;
             width: 5%;
             position: absolute;
             right: 0;
@@ -159,6 +138,10 @@ nav {
             &:hover {
                 cursor: pointer;
                 color: $fourth-color;
+            }
+
+            @include mobile {
+                padding-right: 10px;
             }
         }
     }
@@ -184,7 +167,6 @@ nav {
                 h2 {
                     font-size: 4rem;
                     text-transform: uppercase;
-                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
     
                     @include mobile {
                         font-size: 2rem;
@@ -219,7 +201,6 @@ nav {
                     font-size: 1rem;
                     text-transform: uppercase;
                     font-weight: bold;
-                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
                     @include mobile {
@@ -238,12 +219,10 @@ nav {
                     border: 2px solid #fff;
                     cursor: pointer;
                     background-color: transparent;
-                    // color: $sixth-color;
                     color: #fff;
                     font-size: 1rem;
                     text-transform: uppercase;
                     font-weight: bold;
-                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
                     @include mobile {
@@ -254,7 +233,6 @@ nav {
                 .contact-us:hover {
                     background-color: $third-color;
                     border-color: $third-color;
-                    // color: $third-color;
                     color: #000;
                 }
 
@@ -374,7 +352,6 @@ nav {
                     text-align: center;
                     color: #000;
                     font-size: 5rem;
-                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
                     @include mobile {
                         font-size: 2rem;
@@ -411,8 +388,6 @@ nav {
                     background-color: $third-color;
 
                     h2 {
-                        // color: $primary-color;
-                        // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                         color: #000;
                     }
     
@@ -426,15 +401,13 @@ nav {
                             font-size: 1.2rem;
                             padding-left: 20%;
                             padding-top: 1.5rem;
-                            // color: $primary-color;
 
                             @include mobile {
                                 width: 100%;
                                 padding-left: 30%;
                             }
     
-                            ion-icon {
-                                // color: $primary-color;                           
+                            ion-icon {                         
                                 margin-right: 5px;
                             }                   
                         }
@@ -451,7 +424,6 @@ nav {
                 text-align: center;
                 font-size: 5rem; 
                 margin-bottom: 3rem;
-                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -479,7 +451,6 @@ nav {
                 font-size: 5rem;
                 text-align: center;
                 margin: 2rem 0;
-                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -529,7 +500,6 @@ nav {
                 margin: 1rem;
                 text-transform: uppercase;
                 font-weight: bold;
-                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     
                 &:hover {
@@ -553,7 +523,6 @@ nav {
                                 text-align: center;
                                 font-size: 5rem;
                                 margin: 2rem 0;
-                                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                                 
                                 @include mobile {
                                     font-size: 2rem;
@@ -577,7 +546,6 @@ nav {
                 
                                 h2 {
                                     color: $primary-color;
-                                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                                 }
                 
                                 ul {
@@ -610,10 +578,6 @@ nav {
                                 width: 80%;
                                 margin: auto;
                                 padding-bottom: 5rem;
-
-                                h2 {
-                                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
-                                }
                 
                                 .testimonial-card {
                                     margin: 2rem 0;
@@ -636,7 +600,6 @@ nav {
                 text-align: center;
                 font-size: 5rem;
                 margin: 2rem 0;
-                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -648,7 +611,6 @@ nav {
                 font-size: 3rem;
                 color: #000;
                 margin: 2rem 0;
-                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
 
                 @include mobile {
                     font-size: 1.5rem;
@@ -680,7 +642,6 @@ nav {
                 text-align: center;
                 font-size: 5rem;
                 margin: 2rem 0;
-                // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                 
                 @include mobile {
                     font-size: 2rem;
@@ -749,7 +710,6 @@ nav {
                     text-transform: uppercase;
                     font-weight: bold;
                     margin: auto;
-                    // text-shadow: 1px 1px rgba(14, 30, 37, 0.32);
                     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
                     &:hover {
