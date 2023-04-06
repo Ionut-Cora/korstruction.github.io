@@ -13,7 +13,195 @@
     </head>
     <body>
 
-        <div id="root"></div>
+        <nav>
+            <ul>
+                <li id="home-btn">
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li id="about-btn">
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+                <li id="gallery-btn">
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+                </li>
+                <li id="contact-btn">
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="top-nav">
+
+            <div id="contacts-top">
+                <div class="phone-card">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>0900 900 900</p>
+                </div>            
+            </div>
+            
+            <div id="logo">
+                <h1 id="logo">Korstruction</h1>              
+            </div>
+
+            <ion-icon name="menu-outline" id="menu-btn"></ion-icon>
+        </div>
+
+        <!-- <div id="root"></div> -->
+
+        <div>
+            <header>              
+                <div class="active picture1">
+                    <div class="title">
+                        <p>Welcome to</p>
+                        <h2>Korstruction London</h2>
+                        <p class="title-paragraph">Over 50 years experience in the construction industry</p>                  
+                    </div>
+                    <div class="header-btns">
+                        <button class="find-more">Find More</button>
+                        <button class="contact-us">Contact Us</button>                      
+                    </div>
+                </div>
+                <div class="picture2">
+                    <div class="title">
+                        <h2>Reinforcement Experts</h2>
+                        <p>Steel fixing for the UK</p>                
+                    </div>
+                    <div class="header-btns">
+                        <button class="find-more">Find More</button>
+                        <button class="contact-us">Contact Us</button>                      
+                    </div>
+                </div>
+                <div class="picture3">
+                    <div class="title">
+                        <h2>London's leading carpentry & joinery</h2>
+                    </div>
+                    <div class="header-btns">
+                        <button class="find-more">Find More</button>
+                        <button class="contact-us">Contact Us</button>                      
+                    </div>
+                </div>
+    
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+    
+                <button id="pic1"></button>
+                <button id="pic2"></button>
+                <button id="pic3"></button>
+            </header>
+    
+            <div id="content">
+                <div id="about">
+                    <h2>About Us</h2>
+                    <p>Here at Korstruction London, we have over 50 years experience in the construction industry.</p>
+                    <div id="about-cards">
+                        <div class="card">
+                            <h3>What we do</h3>
+                            <p>This company offer the top quality construction services like steel fixing, carpentry & joinery and more.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Our approach</h3>
+                            <p>We want to show you, our professionality in maximum safety methods and to work to together with you.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Our mission</h3>
+                            <p>Our mission is complete your dream project, in safety, within budget and in to the highest standards.</p>
+                        </div>
+                    </div>
+    
+                    <div class="detail-button-div">
+                        <button id="about-button" class="detail-button">More About Us</button>
+                    </div>
+    
+                    <div class="services-card">
+                        <h2>Our Services</h2>
+                        <ul>
+                            <li>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                Steelfixing
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                Carpentry
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                Groundwork
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                Paving
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                Labouring
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                Welding
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                Bricklaying
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                Painting
+                            </li>
+                        </ul>                   
+                    </div>
+                            
+                </div>
+                        
+            </div>
+    
+            <div id="gallery">
+                <h2>Gallery</h2>
+                <div id="gallery-cards"></div>
+    
+                <div class="detail-button-div">
+                    <button id="gallery-button" class="detail-button">View Full Gallery</button>
+                </div>
+            </div>
+    
+            <div id="contact">
+                <h2>Contact Us</h2>
+                <div id="big-contact">
+                    <div class="contact-card">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <p>0900 900 900</p>
+                    </div>
+                    <div class="contact-card">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <p>korstructionlondon@gmail.co.uk</p>                
+                    </div>
+                    <div class="contact-card">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>1 Central Park Road,<br>
+                        London, CL1 1UK<p>
+                    </div>
+                    <div class="contact-card">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <p>@korstructionlondon</p>
+                    </div>              
+                </div>
+    
+                <div class="detail-button-div">
+                    <button id="contact-button" class="detail-button">More Contact Details</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2021-<script>document.write(new Date().getFullYear())</script> Ionut Cora All rights reserved</p> 
+        </footer>
         
         <script src="js/script.js" async defer></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

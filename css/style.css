@@ -66,12 +66,7 @@ nav li:hover {
   }
 }
 
-.container {
-  min-height: 100vh;
-  position: relative;
-}
-
-.container #top-nav {
+#top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +81,7 @@ nav li:hover {
   position: relative;
 }
 
-.container #top-nav #contacts-top {
+#top-nav #contacts-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +95,7 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #top-nav #contacts-top {
+  #top-nav #contacts-top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -108,100 +103,95 @@ nav li:hover {
   }
 }
 
-.container #top-nav #contacts-top .phone-card {
+#top-nav #contacts-top .phone-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 1.5rem;
 }
 
-.container #top-nav #contacts-top .phone-card:hover {
+#top-nav #contacts-top .phone-card:hover {
   cursor: pointer;
 }
 
-.container #top-nav #contacts-top .phone-card ion-icon {
+#top-nav #contacts-top .phone-card ion-icon {
   margin-right: 5px;
   font-size: 1.5rem;
 }
 
-.container #top-nav #contacts-top .phone-card ion-icon:hover {
+#top-nav #contacts-top .phone-card ion-icon:hover {
   color: #2A2E34;
 }
 
 @media (max-width: 900px) {
-  .container #top-nav #contacts-top .phone-card ion-icon {
+  #top-nav #contacts-top .phone-card ion-icon {
     display: none;
   }
 }
 
-.container #top-nav #contacts-top .phone-card p {
+#top-nav #contacts-top .phone-card p {
   font-size: 1.5rem;
 }
 
-.container #top-nav #contacts-top .phone-card p:hover {
+#top-nav #contacts-top .phone-card p:hover {
   color: #2A2E34;
 }
 
 @media (max-width: 900px) {
-  .container #top-nav #contacts-top .phone-card p {
+  #top-nav #contacts-top .phone-card p {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 900px) {
-  .container #top-nav #contacts-top .phone-card {
+  #top-nav #contacts-top .phone-card {
     margin: 0 0.5rem;
   }
 }
 
-.container #top-nav #logo {
+#top-nav #logo {
   position: relative;
   margin: auto;
 }
 
-.container #top-nav #logo h1 {
+#top-nav #logo h1 {
   text-transform: uppercase;
   border: solid 4px #000;
   padding: 5px;
 }
 
-.container #top-nav #logo h1:hover {
+#top-nav #logo h1:hover {
   cursor: pointer;
   background-color: #000;
   color: #fd0;
 }
 
 @media (max-width: 900px) {
-  .container #top-nav #logo h1 {
+  #top-nav #logo h1 {
     font-size: 1.3rem;
     margin-right: 0.5rem;
   }
 }
 
-.container #top-nav #menu-btn {
+#top-nav #menu-btn {
   font-size: 3rem;
   width: 5%;
   position: absolute;
   right: 0;
 }
 
-.container #top-nav #menu-btn:hover {
+#top-nav #menu-btn:hover {
   cursor: pointer;
   color: #2A2E34;
 }
 
 @media (max-width: 900px) {
-  .container #top-nav #menu-btn {
+  #top-nav #menu-btn {
     padding-right: 10px;
   }
 }
 
-.container #full-content {
-  min-height: 100vh;
-  position: relative;
-}
-
-.container #full-content header {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,44 +199,44 @@ nav li:hover {
   height: 100vh;
 }
 
-.container #full-content header .title {
+header .title {
   width: 80%;
 }
 
-.container #full-content header .title p,
-.container #full-content header .title h2 {
+header .title p,
+header .title h2 {
   color: #fff;
   text-align: center;
 }
 
-.container #full-content header .title h2 {
+header .title h2 {
   font-size: 4rem;
   text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
-  .container #full-content header .title h2 {
+  header .title h2 {
     font-size: 2rem;
   }
 }
 
-.container #full-content header .title p {
+header .title p {
   font-size: 3rem;
 }
 
 @media (max-width: 900px) {
-  .container #full-content header .title p {
+  header .title p {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 900px) {
-  .container #full-content header .title .title-paragraph {
+  header .title .title-paragraph {
     display: none;
   }
 }
 
-.container #full-content header .header-btns .find-more {
+header .header-btns .find-more {
   width: 10rem;
   height: 3rem;
   margin: 1rem;
@@ -262,16 +252,16 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #full-content header .header-btns .find-more {
+  header .header-btns .find-more {
     margin: 0.5rem;
   }
 }
 
-.container #full-content header .header-btns .find-more:hover {
+header .header-btns .find-more:hover {
   background-color: #fd0;
 }
 
-.container #full-content header .header-btns .contact-us {
+header .header-btns .contact-us {
   width: 10rem;
   height: 3rem;
   margin: 1rem;
@@ -287,19 +277,19 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #full-content header .header-btns .contact-us {
+  header .header-btns .contact-us {
     margin: 0.5rem;
   }
 }
 
-.container #full-content header .header-btns .contact-us:hover {
+header .header-btns .contact-us:hover {
   background-color: #fd0;
   border-color: #fd0;
   color: #000;
 }
 
 @media (max-width: 900px) {
-  .container #full-content header .header-btns {
+  header .header-btns {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -310,9 +300,9 @@ nav li:hover {
   }
 }
 
-.container #full-content header .picture1,
-.container #full-content header .picture2,
-.container #full-content header .picture3 {
+header .picture1,
+header .picture2,
+header .picture3 {
   width: 100%;
   height: 100%;
   display: none;
@@ -328,7 +318,7 @@ nav li:hover {
           flex-direction: column;
 }
 
-.container #full-content header .picture1 {
+header .picture1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/pic1.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic1.jpg);
   height: 100%;
@@ -337,7 +327,7 @@ nav li:hover {
   background-size: cover;
 }
 
-.container #full-content header .picture2 {
+header .picture2 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/pic2.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic2.jpg);
   height: 100%;
@@ -346,7 +336,7 @@ nav li:hover {
   background-size: cover;
 }
 
-.container #full-content header .picture3 {
+header .picture3 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/pic3.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic3.jpg);
   height: 100%;
@@ -355,14 +345,14 @@ nav li:hover {
   background-size: cover;
 }
 
-.container #full-content header .active {
+header .active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container #full-content header #prev,
-.container #full-content header #next {
+header #prev,
+header #next {
   position: absolute;
   color: #fff;
   padding: 0 1rem;
@@ -380,29 +370,29 @@ nav li:hover {
   top: 47%;
 }
 
-.container #full-content header #prev:hover,
-.container #full-content header #next:hover {
+header #prev:hover,
+header #next:hover {
   color: #F2EDD7;
 }
 
 @media (max-width: 900px) {
-  .container #full-content header #prev,
-  .container #full-content header #next {
+  header #prev,
+  header #next {
     font-size: 2rem;
   }
 }
 
-.container #full-content header #prev {
+header #prev {
   left: 0;
 }
 
-.container #full-content header #next {
+header #next {
   right: 0;
 }
 
-.container #full-content header #pic1,
-.container #full-content header #pic2,
-.container #full-content header #pic3 {
+header #pic1,
+header #pic2,
+header #pic3 {
   position: absolute;
   left: 50%;
   bottom: 10px;
@@ -413,56 +403,56 @@ nav li:hover {
   border: 0;
 }
 
-.container #full-content header #pic1 {
+header #pic1 {
   margin: 0 -20px;
   background-color: #fff;
 }
 
-.container #full-content header #pic2 {
+header #pic2 {
   margin: 0;
   background-color: #A0937D;
 }
 
-.container #full-content header #pic3 {
+header #pic3 {
   margin: 0 20px;
   background-color: #A0937D;
 }
 
-.container #full-content #content {
+#content {
   width: 100%;
 }
 
-.container #full-content #content #about {
+#content #about {
   padding: 3rem 0;
 }
 
-.container #full-content #content #about h2 {
+#content #about h2 {
   text-align: center;
   color: #000;
   font-size: 5rem;
 }
 
 @media (max-width: 900px) {
-  .container #full-content #content #about h2 {
+  #content #about h2 {
     font-size: 2rem;
   }
 }
 
-.container #full-content #content #about p {
+#content #about p {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 2rem;
   font-size: 1.2rem;
 }
 
-.container #full-content #content #about #about-cards {
+#content #about #about-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 900px) {
-  .container #full-content #content #about #about-cards {
+  #content #about #about-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -470,26 +460,26 @@ nav li:hover {
   }
 }
 
-.container #full-content #content #about #about-cards .card {
+#content #about #about-cards .card {
   padding: 1rem;
 }
 
-.container #full-content #content #about #about-cards .card h3 {
+#content #about #about-cards .card h3 {
   text-align: center;
   color: #fd0;
   font-size: 1.5rem;
 }
 
-.container #full-content #content #about .services-card {
+#content #about .services-card {
   padding: 2rem 0;
   background-color: #fd0;
 }
 
-.container #full-content #content #about .services-card h2 {
+#content #about .services-card h2 {
   color: #000;
 }
 
-.container #full-content #content #about .services-card ul {
+#content #about .services-card ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,7 +488,7 @@ nav li:hover {
   list-style-type: none;
 }
 
-.container #full-content #content #about .services-card ul li {
+#content #about .services-card ul li {
   width: 25%;
   font-size: 1.2rem;
   padding-left: 20%;
@@ -506,17 +496,17 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #full-content #content #about .services-card ul li {
+  #content #about .services-card ul li {
     width: 100%;
     padding-left: 30%;
   }
 }
 
-.container #full-content #content #about .services-card ul li ion-icon {
+#content #about .services-card ul li ion-icon {
   margin-right: 5px;
 }
 
-.container #full-content #gallery h2 {
+#gallery h2 {
   color: #000;
   text-align: center;
   font-size: 5rem;
@@ -524,12 +514,12 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #full-content #gallery h2 {
+  #gallery h2 {
     font-size: 2rem;
   }
 }
 
-.container #full-content #gallery #gallery-cards {
+#gallery #gallery-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,17 +527,17 @@ nav li:hover {
       flex-wrap: wrap;
 }
 
-.container #full-content #gallery #gallery-cards img {
+#gallery #gallery-cards img {
   width: 50%;
 }
 
 @media (max-width: 900px) {
-  .container #full-content #gallery #gallery-cards img {
+  #gallery #gallery-cards img {
     width: 100%;
   }
 }
 
-.container #full-content #contact h2 {
+#contact h2 {
   color: #000;
   font-size: 5rem;
   text-align: center;
@@ -555,12 +545,12 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #full-content #contact h2 {
+  #contact h2 {
     font-size: 2rem;
   }
 }
 
-.container #full-content #contact #big-contact {
+#contact #big-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,7 +560,7 @@ nav li:hover {
   margin: auto;
 }
 
-.container #full-content #contact #big-contact .contact-card {
+#contact #big-contact .contact-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,13 +569,13 @@ nav li:hover {
   padding-left: 20%;
 }
 
-.container #full-content #contact #big-contact .contact-card ion-icon {
+#contact #big-contact .contact-card ion-icon {
   color: #fd0;
   margin-right: 5px;
 }
 
 @media (max-width: 900px) {
-  .container #full-content #contact #big-contact .contact-card {
+  #contact #big-contact .contact-card {
     width: 100%;
     padding-left: 0;
     -webkit-box-pack: center;
@@ -594,7 +584,7 @@ nav li:hover {
   }
 }
 
-.container #full-content .detail-button-div {
+.detail-button-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,7 +594,7 @@ nav li:hover {
   margin: 1rem;
 }
 
-.container #full-content .detail-button-div .detail-button {
+.detail-button-div .detail-button {
   width: 10rem;
   height: 3rem;
   font-size: 1rem;
@@ -619,21 +609,21 @@ nav li:hover {
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.container #full-content .detail-button-div .detail-button:hover {
+.detail-button-div .detail-button:hover {
   background-color: #2A2E34;
   color: #fd0;
 }
 
-.container #full-content #about-page {
+#about-page {
   width: 100%;
   margin: auto;
 }
 
-.container #full-content #about-page #about-content {
+#about-page #about-content {
   padding-bottom: 2.5rem;
 }
 
-.container #full-content #about-page #about-content h2 {
+#about-page #about-content h2 {
   color: #000;
   text-align: center;
   font-size: 5rem;
@@ -641,18 +631,18 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #full-content #about-page #about-content h2 {
+  #about-page #about-content h2 {
     font-size: 2rem;
   }
 }
 
-.container #full-content #about-page #about-content .about-paragraph {
+#about-page #about-content .about-paragraph {
   font-size: 1.2rem;
   margin: 1rem auto;
   width: 80%;
 }
 
-.container #full-content #about-page #about-content .services-card {
+#about-page #about-content .services-card {
   padding: 2rem 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/skills.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/skills.jpg);
@@ -663,11 +653,11 @@ nav li:hover {
   margin: 4rem 0;
 }
 
-.container #full-content #about-page #about-content .services-card h2 {
+#about-page #about-content .services-card h2 {
   color: #fff;
 }
 
-.container #full-content #about-page #about-content .services-card ul {
+#about-page #about-content .services-card ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -677,7 +667,7 @@ nav li:hover {
   padding-bottom: 4rem;
 }
 
-.container #full-content #about-page #about-content .services-card ul li {
+#about-page #about-content .services-card ul li {
   width: 25%;
   font-size: 1.2rem;
   padding-left: 20%;
@@ -686,34 +676,34 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #full-content #about-page #about-content .services-card ul li {
+  #about-page #about-content .services-card ul li {
     width: 100%;
     padding-left: 30%;
   }
 }
 
-.container #full-content #about-page #about-content .services-card ul li ion-icon {
+#about-page #about-content .services-card ul li ion-icon {
   color: #fff;
   margin-right: 5px;
 }
 
-.container #full-content #about-page #about-content #testimonials {
+#about-page #about-content #testimonials {
   width: 80%;
   margin: auto;
   padding-bottom: 5rem;
 }
 
-.container #full-content #about-page #about-content #testimonials .testimonial-card {
+#about-page #about-content #testimonials .testimonial-card {
   margin: 2rem 0;
 }
 
-.container #full-content #about-page footer {
+#about-page footer {
   width: 100%;
   position: absolute;
   bottom: 0;
 }
 
-.container #full-content #gallery-page h2 {
+#gallery-page h2 {
   color: #000;
   text-align: center;
   font-size: 5rem;
@@ -721,12 +711,12 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #full-content #gallery-page h2 {
+  #gallery-page h2 {
     font-size: 2rem;
   }
 }
 
-.container #full-content #gallery-page h3 {
+#gallery-page h3 {
   text-align: center;
   font-size: 3rem;
   color: #000;
@@ -734,13 +724,13 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #full-content #gallery-page h3 {
+  #gallery-page h3 {
     font-size: 1.5rem;
   }
 }
 
-.container #full-content #gallery-page #gallery-page-card,
-.container #full-content #gallery-page #gallery-page-done {
+#gallery-page #gallery-page-card,
+#gallery-page #gallery-page-done {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,19 +738,19 @@ nav li:hover {
       flex-wrap: wrap;
 }
 
-.container #full-content #gallery-page #gallery-page-card img,
-.container #full-content #gallery-page #gallery-page-done img {
+#gallery-page #gallery-page-card img,
+#gallery-page #gallery-page-done img {
   width: 50%;
 }
 
 @media (max-width: 900px) {
-  .container #full-content #gallery-page #gallery-page-card img,
-  .container #full-content #gallery-page #gallery-page-done img {
+  #gallery-page #gallery-page-card img,
+  #gallery-page #gallery-page-done img {
     width: 100%;
   }
 }
 
-.container #full-content #contact-page {
+#contact-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,7 +763,7 @@ nav li:hover {
           align-items: center;
 }
 
-.container #full-content #contact-page h2 {
+#contact-page h2 {
   color: #000;
   text-align: center;
   font-size: 5rem;
@@ -781,12 +771,12 @@ nav li:hover {
 }
 
 @media (max-width: 900px) {
-  .container #full-content #contact-page h2 {
+  #contact-page h2 {
     font-size: 2rem;
   }
 }
 
-.container #full-content #contact-page #contact-details {
+#contact-page #contact-details {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -797,39 +787,39 @@ nav li:hover {
       justify-content: space-around;
 }
 
-.container #full-content #contact-page #contact-details #contact-cards {
+#contact-page #contact-details #contact-cards {
   margin: 2rem 0;
 }
 
-.container #full-content #contact-page #contact-details #contact-cards .contact-card {
+#contact-page #contact-details #contact-cards .contact-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0.5rem;
 }
 
-.container #full-content #contact-page #contact-details #contact-cards .contact-card ion-icon {
+#contact-page #contact-details #contact-cards .contact-card ion-icon {
   color: #fd0;
   margin-right: 5px;
 }
 
-.container #full-content #contact-page #contact-details #office-hours {
+#contact-page #contact-details #office-hours {
   margin: 2rem 0;
 }
 
-.container #full-content #contact-page #contact-details #office-hours h3 {
+#contact-page #contact-details #office-hours h3 {
   padding: 0.5rem;
 }
 
-.container #full-content #contact-page #contact-details #office-hours ul {
+#contact-page #contact-details #office-hours ul {
   list-style-type: none;
 }
 
-.container #full-content #contact-page #contact-details #office-hours ul li {
+#contact-page #contact-details #office-hours ul li {
   padding: 0.5rem;
 }
 
-.container #full-content #contact-page form {
+#contact-page form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,15 +831,15 @@ nav li:hover {
   padding-bottom: 8rem;
 }
 
-.container #full-content #contact-page form input,
-.container #full-content #contact-page form textarea,
-.container #full-content #contact-page form button {
+#contact-page form input,
+#contact-page form textarea,
+#contact-page form button {
   padding: 5px;
   margin: 0.5rem 0;
   outline: 0;
 }
 
-.container #full-content #contact-page form button {
+#contact-page form button {
   width: 10rem;
   height: 2.5rem;
   cursor: pointer;
@@ -863,24 +853,24 @@ nav li:hover {
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.container #full-content #contact-page form button:hover {
+#contact-page form button:hover {
   background-color: #2A2E34;
   color: #fd0;
 }
 
-.container #full-content #contact-page footer {
+#contact-page footer {
   width: 100%;
   position: absolute;
   bottom: 0;
 }
 
-.container footer {
+footer {
   text-align: center;
   padding: 30px 0;
   background-color: #fd0;
 }
 
-.container footer p {
+footer p {
   color: #000;
 }
 /*# sourceMappingURL=style.css.map */
