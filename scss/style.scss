@@ -359,7 +359,7 @@ header {
     width: 100%;
     
     #about {
-        padding: 3rem 0;
+        padding-top: 3rem;
     
         h2 {
             text-align: center;
@@ -399,7 +399,7 @@ header {
         }
     
         .services-card {
-            padding: 2rem 0;
+            padding: 3rem 0;
             background-color: $third-color;
 
             h2 {
@@ -435,6 +435,8 @@ header {
 }
         
 #gallery {
+    padding: 3rem 0;
+
     h2 {
         color: #000;
         text-align: center;
@@ -462,12 +464,13 @@ header {
 }
     
 #contact {
+    padding: 3rem 0;
     
     h2 {
         color: #000;
         font-size: 5rem;
         text-align: center;
-        margin: 2rem 0;
+        margin-bottom: 2rem;
         text-transform: uppercase;
                 
         @include mobile {
@@ -505,7 +508,6 @@ header {
 .detail-button-div {
     display: flex;
     justify-content: center;
-    margin: 1rem;
             
     .detail-button {
         padding: 0.7rem 1.2rem;

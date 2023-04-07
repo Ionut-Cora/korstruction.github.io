@@ -438,7 +438,7 @@ header #pic3 {
 }
 
 #content #about {
-  padding: 3rem 0;
+  padding-top: 3rem;
 }
 
 #content #about h2 {
@@ -488,7 +488,7 @@ header #pic3 {
 }
 
 #content #about .services-card {
-  padding: 2rem 0;
+  padding: 3rem 0;
   background-color: #fd0;
 }
 
@@ -524,6 +524,10 @@ header #pic3 {
   margin-right: 5px;
 }
 
+#gallery {
+  padding: 3rem 0;
+}
+
 #gallery h2 {
   color: #000;
   text-align: center;
@@ -556,11 +560,15 @@ header #pic3 {
   }
 }
 
+#contact {
+  padding: 3rem 0;
+}
+
 #contact h2 {
   color: #000;
   font-size: 5rem;
   text-align: center;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   text-transform: uppercase;
 }
 
@@ -611,7 +619,6 @@ header #pic3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1rem;
 }
 
 .detail-button-div .detail-button {
