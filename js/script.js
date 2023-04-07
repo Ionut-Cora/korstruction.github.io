@@ -1,4 +1,19 @@
 
+// NAVIGATION
+const menuBtn = document.getElementById('menu-btn');
+const nav = document.querySelector('nav');
+let isClicked = false;
+
+menuBtn.addEventListener('click', () => {
+    if (!isClicked) {
+        nav.style.display = 'block';
+        isClicked = true;
+    } else {
+        nav.style.display = 'none';
+        isClicked = false;
+    }
+}, false);
+
 // const galleryPictures = [
 //     {
 //         image: './images/g3.jpg'
@@ -73,23 +88,6 @@
 //         image: './images/d8.jpg'
 //     }
 // ];
-
-// NAVIGATION
-const menuBtn = document.getElementById('menu-btn');
-const nav = document.querySelector('nav');
-let isClicked = false;
-
-menuBtn.addEventListener('click', () => {
-    if (!isClicked) {
-        nav.style.display = 'block';
-        isClicked = true;
-    } else {
-        nav.style.display = 'none';
-        isClicked = false;
-    }
-}, false);
-
-
 
 // const root = document.getElementById('root');
 // window.onload = () => {
