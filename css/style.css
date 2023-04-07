@@ -66,6 +66,10 @@ nav li:hover {
   }
 }
 
+.toggle-style {
+  display: block;
+}
+
 #top-nav {
   display: -webkit-box;
   display: -ms-flexbox;

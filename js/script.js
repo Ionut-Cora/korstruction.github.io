@@ -2,17 +2,22 @@
 // NAVIGATION
 const menuBtn = document.getElementById('menu-btn');
 const nav = document.querySelector('nav');
-let isClicked = false;
 
 menuBtn.addEventListener('click', () => {
-    if (!isClicked) {
-        nav.style.display = 'block';
-        isClicked = true;
-    } else {
-        nav.style.display = 'none';
-        isClicked = false;
-    }
-}, false);
+    nav.classList.toggle('toggle-style');
+});
+
+// let isClicked = false;
+
+// menuBtn.addEventListener('click', () => {
+//     if (!isClicked) {
+//         nav.style.display = 'block';
+//         isClicked = true;
+//     } else {
+//         nav.style.display = 'none';
+//         isClicked = false;
+//     }
+// }, false);
 
 // const galleryPictures = [
 //     {
