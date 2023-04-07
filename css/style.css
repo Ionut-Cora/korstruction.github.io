@@ -434,6 +434,7 @@ header #pic3 {
   text-align: center;
   color: #000;
   font-size: 5rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
@@ -472,6 +473,7 @@ header #pic3 {
   text-align: center;
   color: #fd0;
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 #content #about .services-card {
@@ -481,6 +483,7 @@ header #pic3 {
 
 #content #about .services-card h2 {
   color: #000;
+  text-transform: uppercase;
 }
 
 #content #about .services-card ul {
@@ -515,6 +518,7 @@ header #pic3 {
   text-align: center;
   font-size: 5rem;
   margin-bottom: 3rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
@@ -546,6 +550,7 @@ header #pic3 {
   font-size: 5rem;
   text-align: center;
   margin: 2rem 0;
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
@@ -632,6 +637,7 @@ header #pic3 {
   text-align: center;
   font-size: 5rem;
   margin: 2rem 0;
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
@@ -712,6 +718,7 @@ header #pic3 {
   text-align: center;
   font-size: 5rem;
   margin: 2rem 0;
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
@@ -725,6 +732,7 @@ header #pic3 {
   font-size: 3rem;
   color: #000;
   margin: 2rem 0;
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
@@ -772,6 +780,7 @@ header #pic3 {
   text-align: center;
   font-size: 5rem;
   margin: 2rem 0;
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
