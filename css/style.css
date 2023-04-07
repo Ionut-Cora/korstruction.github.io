@@ -7,6 +7,11 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 nav {
   height: 100vh;
   width: 20vw;
@@ -433,10 +438,6 @@ header #pic3 {
   background-color: #A0937D;
 }
 
-#content {
-  width: 100%;
-}
-
 #content #about {
   padding-top: 3rem;
 }
@@ -489,6 +490,7 @@ header #pic3 {
 
 #content #about .services-card {
   padding: 3rem 0;
+  margin-top: 3rem;
   background-color: #fd0;
 }
 
@@ -584,8 +586,6 @@ header #pic3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
 }
 
 #contact #big-contact .contact-card {
