@@ -204,17 +204,17 @@ header {
         margin-top: 2rem;
 
         .find-more {
-            padding: 0.5rem 1rem;
+            padding: 0.7rem 1.2rem;
+            border-radius: 0.25rem;
             margin: 1rem;
             border: 0;
             cursor: pointer;
             background-color: $primary-color;
             color: #000;
-            font-size: 1rem;
+            font-size: 1.25rem;
             text-transform: uppercase;
             text-decoration: none;
-            font-weight: bold;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 
             @include mobile {
                 margin: 0.5rem;
@@ -226,17 +226,17 @@ header {
         }
     
         .contact-us {
-            padding: 0.5rem 1rem;
+            padding: 0.7rem 1.2rem;
+            border-radius: 0.25rem;
             margin: 1rem;
             border: 2px solid #fff;
             cursor: pointer;
             background-color: transparent;
             color: #fff;
-            font-size: 1rem;
+            font-size: 1.25rem;
             text-transform: uppercase;
             text-decoration: none;
-            font-weight: bold;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 
             @include mobile {
                 margin: 0.5rem;
@@ -508,8 +508,9 @@ header {
     margin: 1rem;
             
     .detail-button {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+        border-radius: 0.25rem;
+        font-size: 1.25rem;
         cursor: pointer;
         background-color: $fifth-color;
         color: $primary-color;
@@ -517,8 +518,7 @@ header {
         margin: 1rem;
         text-transform: uppercase;
         text-decoration: none;
-        font-weight: bold;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     
         &:hover {
             background-color: $fourth-color;
@@ -722,16 +722,17 @@ header {
         }
 
         button {
-            width: 10rem;
-            height: 2.5rem;
+            padding: 0.7rem 1.2rem;
+            border-radius: 0.25rem;
+            font-size: 1.25rem;
             cursor: pointer;
             background-color: $fifth-color;
             color: $primary-color;
             border: 0;
             text-transform: uppercase;
-            font-weight: bold;
             margin: auto;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+            margin-top: 1rem;
 
             &:hover {
                 background-color: $fourth-color;

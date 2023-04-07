@@ -252,18 +252,18 @@ header .header-btns {
 }
 
 header .header-btns .find-more {
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.25rem;
   margin: 1rem;
   border: 0;
   cursor: pointer;
   background-color: #fff;
   color: #000;
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 900px) {
@@ -277,18 +277,18 @@ header .header-btns .find-more:hover {
 }
 
 header .header-btns .contact-us {
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.25rem;
   margin: 1rem;
   border: 2px solid #fff;
   cursor: pointer;
   background-color: transparent;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 900px) {
@@ -615,8 +615,9 @@ header #pic3 {
 }
 
 .detail-button-div .detail-button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
   cursor: pointer;
   background-color: #003566;
   color: #fff;
@@ -624,9 +625,8 @@ header #pic3 {
   margin: 1rem;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .detail-button-div .detail-button:hover {
@@ -864,17 +864,18 @@ header #pic3 {
 }
 
 #contact-page form button {
-  width: 10rem;
-  height: 2.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
   cursor: pointer;
   background-color: #003566;
   color: #fff;
   border: 0;
   text-transform: uppercase;
-  font-weight: bold;
   margin: auto;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
 }
 
 #contact-page form button:hover {
