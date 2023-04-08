@@ -482,14 +482,14 @@ header #pic3 {
   padding: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.175);
   border-radius: 0.25rem;
-  margin: auto 0.5rem;
+  margin: auto 0.75rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
+  background-color: #fd0;
 }
 
 #content #about #about-cards .card h3 {
   text-align: center;
-  color: #fd0;
   font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -502,7 +502,7 @@ header #pic3 {
 
 @media (max-width: 900px) {
   #content #about #about-cards .card {
-    margin-bottom: 1rem;
+    margin: 0.75rem 0;
   }
 }
 
@@ -527,6 +527,12 @@ header #pic3 {
 }
 
 #content #about .services-card ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 25%;
   font-size: 1.2rem;
   padding-left: 20%;
