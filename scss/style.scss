@@ -531,9 +531,9 @@ header {
     
 #contact {
     padding: 3rem 0;
+    background-color: $seventh-color;
     
     h2 {
-        color: #000;
         font-size: 5rem;
         text-align: center;
         margin-bottom: 2rem;
@@ -542,6 +542,11 @@ header {
         @include mobile {
             font-size: 2rem;
         }
+    }
+
+    h2,
+    p {
+        color: $primary-color;
     }
     
     #big-contact {
