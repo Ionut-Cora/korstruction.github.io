@@ -176,12 +176,12 @@ header {
         width: 80%;
     
         p,
-        h2 {
+        h1 {
             color: $primary-color;
             text-align: center;
         }
                 
-        h2 {
+        h1 {
             font-size: 4rem;
             text-transform: uppercase;
     
@@ -190,7 +190,7 @@ header {
             }
 
             @include phone {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
         }
                 
@@ -277,6 +277,7 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding-bottom: 1rem;
     }
             
     .picture1 {
@@ -302,7 +303,7 @@ header {
 
             .title {
 
-                h2 {
+                h1 {
                     text-align: end;
 
                     @include mobile {
@@ -347,7 +348,7 @@ header {
             .title {
                 width: 50%;
 
-                h2 {
+                h1 {
                     text-align: start;
 
                     @include mobile {

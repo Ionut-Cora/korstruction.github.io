@@ -220,25 +220,25 @@ header .title {
 }
 
 header .title p,
-header .title h2 {
+header .title h1 {
   color: #fff;
   text-align: center;
 }
 
-header .title h2 {
+header .title h1 {
   font-size: 4rem;
   text-transform: uppercase;
 }
 
 @media (max-width: 992px) {
-  header .title h2 {
+  header .title h1 {
     font-size: 3rem;
   }
 }
 
 @media (max-width: 576px) {
-  header .title h2 {
-    font-size: 2rem;
+  header .title h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -347,6 +347,7 @@ header .picture3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 1rem;
 }
 
 header .picture1 {
@@ -381,12 +382,12 @@ header .picture2 div {
           align-items: end;
 }
 
-header .picture2 div .title h2 {
+header .picture2 div .title h1 {
   text-align: end;
 }
 
 @media (max-width: 992px) {
-  header .picture2 div .title h2 {
+  header .picture2 div .title h1 {
     text-align: center;
   }
 }
@@ -449,12 +450,12 @@ header .picture3 div .title {
   width: 50%;
 }
 
-header .picture3 div .title h2 {
+header .picture3 div .title h1 {
   text-align: start;
 }
 
 @media (max-width: 992px) {
-  header .picture3 div .title h2 {
+  header .picture3 div .title h1 {
     text-align: center;
   }
 }
