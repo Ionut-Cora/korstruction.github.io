@@ -602,16 +602,29 @@ header {
     
 #contact {
     padding: 3rem 0;
-    background-color: $seventh-color;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
     
     h2 {
         font-size: 5rem;
         text-align: center;
-        margin-bottom: 2rem;
         text-transform: uppercase;
                 
         @include mobile {
             font-size: 2rem;
+        }
+    }
+
+    p {
+        text-align: center;
+        width: 75%;
+        margin: 0 auto 2rem auto;
+
+        @include mobile {
+            width: 100%;
+            margin: 1rem auto;
         }
     }
 
