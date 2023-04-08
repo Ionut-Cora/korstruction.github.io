@@ -17,7 +17,7 @@ nav {
   width: 20vw;
   position: absolute;
   right: 0;
-  background-color: #fd0;
+  background-color: #fde047;
   z-index: 100;
   margin-top: 80px;
   display: none;
@@ -91,7 +91,7 @@ nav li a {
       -ms-flex-align: center;
           align-items: center;
   height: 5rem;
-  background-color: #fd0;
+  background-color: #fde047;
   position: relative;
 }
 
@@ -179,7 +179,7 @@ nav li a {
 #top-nav #logo a:hover {
   cursor: pointer;
   background-color: #000;
-  color: #fd0;
+  color: #fde047;
 }
 
 @media (max-width: 992px) {
@@ -284,7 +284,7 @@ header .header-btns .find-more {
 }
 
 header .header-btns .find-more:hover {
-  background-color: #fd0;
+  background-color: #e2e8f0;
 }
 
 header .header-btns .contact-us {
@@ -309,8 +309,8 @@ header .header-btns .contact-us {
 }
 
 header .header-btns .contact-us:hover {
-  background-color: #fd0;
-  border-color: #fd0;
+  background-color: #e2e8f0;
+  border-color: #e2e8f0;
   color: #000;
 }
 
@@ -614,7 +614,7 @@ header #pic3 {
   margin: auto 0.75rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
-  background-color: #fd0;
+  background-color: #fde047;
 }
 
 #content #about #about-cards .card h3 {
@@ -638,7 +638,7 @@ header #pic3 {
 #content #about .services-card {
   padding: 3rem 0;
   margin-top: 3rem;
-  background-color: #fd0;
+  background-color: #fde047;
 }
 
 #content #about .services-card .container h2 {
@@ -880,7 +880,7 @@ header #pic3 {
 }
 
 #contact #big-contact .contact-card ion-icon {
-  color: #fd0;
+  color: #fde047;
   margin-right: 5px;
 }
 
@@ -908,7 +908,7 @@ header #pic3 {
   border-radius: 0.25rem;
   font-size: 1.25rem;
   cursor: pointer;
-  background-color: #003566;
+  background-color: #1e40af;
   color: #fff;
   border: 0;
   margin: 1rem;
@@ -919,8 +919,7 @@ header #pic3 {
 }
 
 .detail-button-div .detail-button:hover {
-  background-color: #2A2E34;
-  color: #fd0;
+  background-color: #1d4ed8;
 }
 
 #about-page {
@@ -1112,7 +1111,7 @@ header #pic3 {
 }
 
 #contact-page #contact-details #contact-cards .contact-card ion-icon {
-  color: #fd0;
+  color: #fde047;
   margin-right: 5px;
 }
 
@@ -1157,7 +1156,7 @@ header #pic3 {
   border-radius: 0.25rem;
   font-size: 1.25rem;
   cursor: pointer;
-  background-color: #003566;
+  background-color: #1e40af;
   color: #fff;
   border: 0;
   text-transform: uppercase;
@@ -1168,8 +1167,7 @@ header #pic3 {
 }
 
 #contact-page form button:hover {
-  background-color: #2A2E34;
-  color: #fd0;
+  background-color: #1d4ed8;
 }
 
 #contact-page footer {
@@ -1181,7 +1179,7 @@ header #pic3 {
 footer {
   text-align: center;
   padding: 30px 0;
-  background-color: #fd0;
+  background-color: #fde047;
 }
 
 footer p {

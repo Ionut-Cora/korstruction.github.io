@@ -231,7 +231,8 @@ header {
         }
                 
         .find-more:hover {
-            background-color: $third-color;
+            // background-color: $third-color;
+            background-color: #e2e8f0;
         }
     
         .contact-us {
@@ -253,8 +254,9 @@ header {
         }
     
         .contact-us:hover {
-            background-color: $third-color;
-            border-color: $third-color;
+            // background-color: $third-color;
+            background-color: #e2e8f0;
+            border-color: #e2e8f0;
             color: #000;
         }
 
@@ -729,8 +731,9 @@ header {
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     
         &:hover {
-            background-color: $fourth-color;
-            color: $third-color;
+            // background-color: $fourth-color;
+            // color: $third-color;
+            background-color: #1d4ed8;
         }
     }
 }
@@ -943,8 +946,9 @@ header {
             margin-top: 1rem;
 
             &:hover {
-                background-color: $fourth-color;
-                color: $third-color;
+                // background-color: $fourth-color;
+                background-color: #1d4ed8;
+                // color: $third-color;
             }
         }
     }
