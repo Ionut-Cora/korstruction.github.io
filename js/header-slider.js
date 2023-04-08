@@ -49,9 +49,9 @@ function handleDesign() {
 
 let refreshInterval;
 
-refreshInterval = setInterval(function() {
-    handleDesign();
-}, 5000);
+// refreshInterval = setInterval(function() {
+//     handleDesign();
+// }, 5000);
 
 prev.addEventListener('click', (event) => {
     event.preventDefault();

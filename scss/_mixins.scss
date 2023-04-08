@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin phone {
+    @media (max-width: $phone) {
+        @content;
+    }
+}

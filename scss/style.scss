@@ -186,6 +186,10 @@ header {
             text-transform: uppercase;
     
             @include mobile {
+                font-size: 3rem;
+            }
+
+            @include phone {
                 font-size: 2rem;
             }
         }
@@ -256,6 +260,9 @@ header {
 
         @include mobile {
             display: flex;
+        }
+
+        @include phone {
             flex-direction: column;
         }
     }
@@ -273,7 +280,7 @@ header {
     }
             
     .picture1 {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic1.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../images/pic1.jpg);
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -281,19 +288,94 @@ header {
     }
             
     .picture2 {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic2.jpg);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../images/pic2.jpg);
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        div {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            .title {
+
+                h2 {
+                    text-align: end;
+
+                    @include mobile {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .header-btns {
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+
+                @include mobile {
+                    justify-content: center;
+                }
+
+                @include phone {
+                    flex-direction: column;
+                }
+            }
+
+            @include mobile {
+                width: 100%;
+                margin: 1rem auto;
+                align-items: center;
+            }
+        }
     }
             
     .picture3 {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic3.jpg);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(../images/pic3.jpg);
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        div {
+            width: 80%;
+
+            .title {
+                width: 50%;
+
+                h2 {
+                    text-align: start;
+
+                    @include mobile {
+                        text-align: center;
+                    }
+                }
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+  
+            .header-btns {
+                width: 80%;
+                display: flex;
+                align-items: flex-start;
+
+                @include mobile {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            @include mobile {
+                width: 100%;
+                margin: 1rem auto;
+            }
+        }
     }
             
     .active {
@@ -471,30 +553,6 @@ header {
                         flex-direction: column;
                     }
                 }
-        
-                // ul {
-                //     display: flex;
-                //     flex-wrap: wrap;
-                //     list-style-type: none;
-            
-                //     li {
-                //         display: flex;
-                //         align-items: center;
-                //         width: 25%;
-                //         font-size: 1.2rem;
-                //         padding-left: 20%;
-                //         padding-top: 1.5rem;
-    
-                //         @include mobile {
-                //             width: 100%;
-                //             padding-left: 30%;
-                //         }
-        
-                //         ion-icon {                         
-                //             margin-right: 5px;
-                //         }                   
-                //     }
-                // }
             }
         }    
     }  
