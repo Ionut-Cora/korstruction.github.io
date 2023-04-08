@@ -393,7 +393,7 @@ header {
             .card {
                 padding: 1.5rem;
                 border: 1px solid rgba(0, 0, 0, 0.175);
-                border-radius: 0.25rem;
+                border-radius: 0.375rem;
                 margin: auto 0.75rem;
                 box-shadow: 0 0.5rem 1rem rgba(33,37,41, 0.15);
                 background-color: $third-color;
@@ -421,38 +421,83 @@ header {
             margin-top: 3rem;
             background-color: $third-color;
 
-            h2 {
-                color: #000;
-                text-transform: uppercase;
-            }
-    
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                list-style-type: none;
-        
-                li {
+            .container {
+                h2 {
+                    color: #000;
+                    text-transform: uppercase;
+                    margin-bottom: 3rem;
+                }
+
+                .services-cards {
                     display: flex;
-                    align-items: center;
-                    width: 25%;
-                    font-size: 1.2rem;
-                    padding-left: 20%;
-                    padding-top: 1.5rem;
+                    margin-bottom: 1rem;
+
+                    .card {
+                        padding: 2.5rem;
+                        border: 1px solid rgba(0, 0, 0, 0.175);
+                        border-radius: 0.375rem;
+                        margin: auto 0.75rem;
+                        box-shadow: 0 0.5rem 1rem rgba(33,37,41, 0.15);
+                        background-color: $seventh-color;
+
+                        img {
+                            width: 100%;
+                            padding: 0.25rem;
+                            background-color: $primary-color;
+                            border: 1px solid $primary-color;
+                            border-radius: 0.375rem;
+                        }
+
+                        h3,
+                        p {
+                            color: $primary-color;
+                        }
+
+                        h3 {
+                            font-size: 2rem;
+                            margin-top: 1.5rem;
+                        }
+
+                        p {
+                            text-align: start;
+                        }
+
+                        @include mobile {
+                            margin: 0.75rem 0;
+                        }
+                    }
 
                     @include mobile {
-                        width: 100%;
-                        padding-left: 30%;
+                        flex-direction: column;
                     }
-    
-                    ion-icon {                         
-                        margin-right: 5px;
-                    }                   
                 }
+        
+                // ul {
+                //     display: flex;
+                //     flex-wrap: wrap;
+                //     list-style-type: none;
+            
+                //     li {
+                //         display: flex;
+                //         align-items: center;
+                //         width: 25%;
+                //         font-size: 1.2rem;
+                //         padding-left: 20%;
+                //         padding-top: 1.5rem;
+    
+                //         @include mobile {
+                //             width: 100%;
+                //             padding-left: 30%;
+                //         }
+        
+                //         ion-icon {                         
+                //             margin-right: 5px;
+                //         }                   
+                //     }
+                // }
             }
-        }
-    
-    }
-    
+        }    
+    }  
 }
         
 #gallery {

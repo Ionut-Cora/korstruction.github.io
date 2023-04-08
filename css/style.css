@@ -43,7 +43,7 @@ nav ul #contact-btn {
   padding-bottom: 100px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   nav ul #contact-btn {
     padding-bottom: 30px;
   }
@@ -69,7 +69,7 @@ nav li a {
   color: #000;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   nav {
     width: 100%;
     height: 50vh;
@@ -108,7 +108,7 @@ nav li a {
   position: absolute;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #top-nav #contacts-top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -137,7 +137,7 @@ nav li a {
   color: #2A2E34;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #top-nav #contacts-top .phone-card ion-icon {
     display: none;
   }
@@ -151,13 +151,13 @@ nav li a {
   color: #2A2E34;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #top-nav #contacts-top .phone-card p {
     font-size: 0.9rem;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #top-nav #contacts-top .phone-card {
     margin: 0 0.5rem;
   }
@@ -182,7 +182,7 @@ nav li a {
   color: #fd0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #top-nav #logo a {
     font-size: 1.3rem;
     margin-right: 0.5rem;
@@ -201,7 +201,7 @@ nav li a {
   color: #2A2E34;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #top-nav #menu-btn {
     padding-right: 10px;
   }
@@ -230,7 +230,7 @@ header .title h2 {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   header .title h2 {
     font-size: 2rem;
   }
@@ -240,13 +240,13 @@ header .title p {
   font-size: 3rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   header .title p {
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   header .title .title-paragraph {
     display: none;
   }
@@ -271,7 +271,7 @@ header .header-btns .find-more {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   header .header-btns .find-more {
     margin: 0.5rem;
   }
@@ -296,7 +296,7 @@ header .header-btns .contact-us {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   header .header-btns .contact-us {
     margin: 0.5rem;
   }
@@ -308,7 +308,7 @@ header .header-btns .contact-us:hover {
   color: #000;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   header .header-btns {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -395,7 +395,7 @@ header #next:hover {
   color: #F2EDD7;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   header #prev,
   header #next {
     font-size: 2rem;
@@ -449,7 +449,7 @@ header #pic3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #content #about h2 {
     font-size: 2rem;
   }
@@ -469,7 +469,7 @@ header #pic3 {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #content #about #about-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -481,7 +481,7 @@ header #pic3 {
 #content #about #about-cards .card {
   padding: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.175);
-  border-radius: 0.25rem;
+  border-radius: 0.375rem;
   margin: auto 0.75rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
@@ -500,7 +500,7 @@ header #pic3 {
   font-size: 1rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #content #about #about-cards .card {
     margin: 0.75rem 0;
   }
@@ -512,42 +512,64 @@ header #pic3 {
   background-color: #fd0;
 }
 
-#content #about .services-card h2 {
+#content #about .services-card .container h2 {
   color: #000;
   text-transform: uppercase;
+  margin-bottom: 3rem;
 }
 
-#content #about .services-card ul {
+#content #about .services-card .container .services-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style-type: none;
+  margin-bottom: 1rem;
 }
 
-#content #about .services-card ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25%;
-  font-size: 1.2rem;
-  padding-left: 20%;
-  padding-top: 1.5rem;
+#content #about .services-card .container .services-cards .card {
+  padding: 2.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 0.375rem;
+  margin: auto 0.75rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
+  background-color: #212529;
 }
 
-@media (max-width: 900px) {
-  #content #about .services-card ul li {
-    width: 100%;
-    padding-left: 30%;
+#content #about .services-card .container .services-cards .card img {
+  width: 100%;
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.375rem;
+}
+
+#content #about .services-card .container .services-cards .card h3,
+#content #about .services-card .container .services-cards .card p {
+  color: #fff;
+}
+
+#content #about .services-card .container .services-cards .card h3 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+#content #about .services-card .container .services-cards .card p {
+  text-align: start;
+}
+
+@media (max-width: 992px) {
+  #content #about .services-card .container .services-cards .card {
+    margin: 0.75rem 0;
   }
 }
 
-#content #about .services-card ul li ion-icon {
-  margin-right: 5px;
+@media (max-width: 992px) {
+  #content #about .services-card .container .services-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #gallery {
@@ -562,7 +584,7 @@ header #pic3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #gallery h2 {
     font-size: 2rem;
   }
@@ -580,7 +602,7 @@ header #pic3 {
   width: 50%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #gallery #gallery-cards img {
     width: 100%;
   }
@@ -598,7 +620,7 @@ header #pic3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #contact h2 {
     font-size: 2rem;
   }
@@ -626,7 +648,7 @@ header #pic3 {
   margin-right: 5px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #contact #big-contact .contact-card {
     width: 100%;
     padding-left: 0;
@@ -682,7 +704,7 @@ header #pic3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #about-page #about-content h2 {
     font-size: 2rem;
   }
@@ -727,7 +749,7 @@ header #pic3 {
   color: #fff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #about-page #about-content .services-card ul li {
     width: 100%;
     padding-left: 30%;
@@ -763,7 +785,7 @@ header #pic3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #gallery-page h2 {
     font-size: 2rem;
   }
@@ -777,7 +799,7 @@ header #pic3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #gallery-page h3 {
     font-size: 1.5rem;
   }
@@ -797,7 +819,7 @@ header #pic3 {
   width: 50%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #gallery-page #gallery-page-card img,
   #gallery-page #gallery-page-done img {
     width: 100%;
@@ -825,7 +847,7 @@ header #pic3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   #contact-page h2 {
     font-size: 2rem;
   }
