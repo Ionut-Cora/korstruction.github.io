@@ -384,19 +384,34 @@ header {
         
         #about-cards {
             display: flex;
+            margin-bottom: 1rem;
     
             @include mobile {
                 flex-direction: column;
             }
         
             .card {
-                padding: 1rem;
+                padding: 1.5rem;
+                border: 1px solid rgba(0, 0, 0, 0.175);
+                border-radius: 0.25rem;
+                margin: auto 0.5rem;
+                box-shadow: 0 0.5rem 1rem rgba(33,37,41, 0.15);
         
                 h3 {
                     text-align: center;
                     color: $third-color;
                     font-size: 1.5rem;
-                    text-transform: uppercase;                
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;              
+                }
+
+                p {
+                    padding: 0;
+                    font-size: 1rem;
+                }
+
+                @include mobile {
+                    margin-bottom: 1rem;
                 }
             }
         }

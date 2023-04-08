@@ -466,6 +466,7 @@ header #pic3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 900px) {
@@ -478,7 +479,12 @@ header #pic3 {
 }
 
 #content #about #about-cards .card {
-  padding: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 0.25rem;
+  margin: auto 0.5rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
 }
 
 #content #about #about-cards .card h3 {
@@ -486,6 +492,18 @@ header #pic3 {
   color: #fd0;
   font-size: 1.5rem;
   text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+#content #about #about-cards .card p {
+  padding: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  #content #about #about-cards .card {
+    margin-bottom: 1rem;
+  }
 }
 
 #content #about .services-card {
