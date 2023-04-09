@@ -1023,25 +1023,11 @@ header #pic3 {
   bottom: 0;
 }
 
-#gallery-page h2 {
-  color: #000;
-  text-align: center;
-  font-size: 3rem;
-  margin: 2rem 0;
-  text-transform: uppercase;
-}
-
-@media (max-width: 992px) {
-  #gallery-page h2 {
-    font-size: 2rem;
-  }
-}
-
 #gallery-page h3 {
   text-align: center;
   font-size: 3rem;
   color: #000;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   text-transform: uppercase;
 }
 
@@ -1051,6 +1037,24 @@ header #pic3 {
   }
 }
 
+#gallery-page p {
+  margin-bottom: 1rem;
+}
+
+#gallery-page .done-projects {
+  background-color: #212529;
+}
+
+#gallery-page .done-projects h3,
+#gallery-page .done-projects p {
+  color: #fff;
+}
+
+#gallery-page .works-in-progress,
+#gallery-page .done-projects {
+  padding: 3rem 0;
+}
+
 #gallery-page #gallery-page-card,
 #gallery-page #gallery-page-done {
   display: -webkit-box;
@@ -1058,11 +1062,18 @@ header #pic3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #gallery-page #gallery-page-card img,
 #gallery-page #gallery-page-done img {
-  width: 50%;
+  width: 45%;
+  margin: 0.5rem;
+  border-radius: 0.375rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
 }
 
 @media (max-width: 992px) {

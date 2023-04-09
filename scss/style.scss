@@ -782,12 +782,10 @@ header {
                 display: flex;
                 flex-wrap: wrap;
                 list-style-type: none;
-                // padding-bottom: 4rem;
                     
                 li {
                     width: 25%;
                     font-size: 1.2rem;
-                    // padding-left: 20%;
                     padding-top: 1.5rem;
                     color: $primary-color;
                     display: flex;
@@ -832,23 +830,11 @@ header {
 
 #gallery-page {
 
-    h2 {
-        color: #000; 
-        text-align: center;
-        font-size: 3rem;
-        margin: 2rem 0;
-        text-transform: uppercase;
-                
-        @include mobile {
-            font-size: 2rem;
-        }
-    }
-
     h3 {
         text-align: center;
         font-size: 3rem;
         color: #000;
-        margin: 2rem 0;
+        margin-bottom: 2rem;
         text-transform: uppercase;
 
         @include mobile {
@@ -856,13 +842,35 @@ header {
         }
     }
 
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .done-projects {
+        background-color: $seventh-color;
+
+        h3,
+        p {
+            color: $primary-color;
+        }
+    }
+
+    .works-in-progress,
+    .done-projects {
+        padding: 3rem 0;
+    }
+
     #gallery-page-card,
     #gallery-page-done {
         display: flex;
         flex-wrap: wrap;
-    
+        justify-content: center;
+
         img {
-            width: 50%;
+            width: 45%;
+            margin: 0.5rem;
+            border-radius: 0.375rem;
+            box-shadow: 0 0.5rem 1rem rgba(33,37,41, 0.15);
     
             @include mobile {
                 width: 100%;
