@@ -21,7 +21,7 @@ nav {
   background-color: #fde047;
   z-index: 100;
   margin-top: 80px;
-  left: -100%;
+  left: -103%;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
