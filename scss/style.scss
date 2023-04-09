@@ -231,7 +231,6 @@ header {
         }
                 
         .find-more:hover {
-            // background-color: $third-color;
             background-color: #e2e8f0;
         }
     
@@ -254,7 +253,6 @@ header {
         }
     
         .contact-us:hover {
-            // background-color: $third-color;
             background-color: #e2e8f0;
             border-color: #e2e8f0;
             color: #000;
@@ -268,7 +266,6 @@ header {
             flex-direction: column;
         }
     }
-
     
     .picture1,
     .picture2,
@@ -731,8 +728,6 @@ header {
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     
         &:hover {
-            // background-color: $fourth-color;
-            // color: $third-color;
             background-color: #1d4ed8;
         }
     }
@@ -743,7 +738,6 @@ header {
     margin: auto;
 
     #about-content {
-
         .about-intro {
             padding: 3rem 0;
         }
@@ -752,7 +746,6 @@ header {
             color: #000; 
             text-align: center;
             font-size: 3rem;
-            // margin: 2rem 0;
             text-transform: uppercase;
                                 
             @include mobile {
@@ -818,13 +811,6 @@ header {
                 }
             }
         }
-
-    }
-
-    footer {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
     }
 }
 
@@ -996,12 +982,6 @@ header {
                 }
             }
         }
-    }  
-
-    footer {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
     }
 }
 

@@ -1017,12 +1017,6 @@ header #pic3 {
   color: #fff;
 }
 
-#about-page footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
 #gallery-page h3 {
   text-align: center;
   font-size: 3rem;
@@ -1226,12 +1220,6 @@ header #pic3 {
 
 #contact-page .contact-form .container form button:hover {
   background-color: #1d4ed8;
-}
-
-#contact-page footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 
 footer {
