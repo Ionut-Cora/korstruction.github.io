@@ -880,15 +880,11 @@ header {
 }
 
 #contact-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     h2 {
         color: #000; 
         text-align: center;
         font-size: 3rem;
-        margin: 2rem 0;
+        margin-bottom: 0.5rem;
         text-transform: uppercase;
                 
         @include mobile {
@@ -897,14 +893,18 @@ header {
     }
 
     #contact-details {
-        width: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        padding: 3rem 0;
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+
+            @include phone {
+                flex-direction: column;
+            }
+        }
 
         #contact-cards {
-            margin: 2rem 0;
-    
             .contact-card {
                 display: flex;
                 padding: 0.5rem;
@@ -917,7 +917,9 @@ header {
         }
 
         #office-hours {
-            margin: 2rem 0;
+            @include phone {
+                margin-top: 1rem;
+            }
 
             h3 {
                 padding: 0.5rem;
@@ -933,41 +935,68 @@ header {
         }
     }
 
-            
-    form {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        padding-bottom: 8rem;
+    .contact-form {
+        padding: 3rem 0;
+        background-color: $seventh-color;
 
-        input,
-        textarea,
-        button {
-            padding: 5px;
-            margin: 0.5rem 0;
-            outline: 0;
-        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-        button {
-            padding: 0.7rem 1.2rem;
-            border-radius: 0.25rem;
-            font-size: 1.25rem;
-            cursor: pointer;
-            background-color: $fifth-color;
-            color: $primary-color;
-            border: 0;
-            text-transform: uppercase;
-            margin: auto;
-            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-            margin-top: 1rem;
+            h2,
+            p {
+                color: $primary-color;
+            }
 
-            &:hover {
-                // background-color: $fourth-color;
-                background-color: #1d4ed8;
-                // color: $third-color;
+            p {
+                width: 75%;
+                text-align: center;
+                margin-bottom: 2rem;
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+
+                @include phone {
+                    width: 100%;
+                }
+        
+                input,
+                textarea,
+                button {
+                    padding: 15px;
+                    margin: 0.5rem 0;
+                    outline: 0;
+                    border-radius: 0.25rem;
+                }
+        
+                button {
+                    padding: 0.7rem 1.2rem;
+                    border-radius: 0.25rem;
+                    font-size: 1.25rem;
+                    cursor: pointer;
+                    background-color: $fifth-color;
+                    color: $primary-color;
+                    border: 0;
+                    text-transform: uppercase;
+                    margin: auto;
+                    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+                    margin-top: 1rem;
+        
+                    &:hover {
+                        background-color: #1d4ed8;
+                    }
+                }
             }
         }
-    }
+    }  
 
     footer {
         width: 100%;
