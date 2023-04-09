@@ -927,15 +927,14 @@ header #pic3 {
   margin: auto;
 }
 
-#about-page #about-content {
-  padding-bottom: 2.5rem;
+#about-page #about-content .about-intro {
+  padding: 3rem 0;
 }
 
 #about-page #about-content h2 {
   color: #000;
   text-align: center;
   font-size: 3rem;
-  margin: 2rem 0;
   text-transform: uppercase;
 }
 
@@ -952,14 +951,13 @@ header #pic3 {
 }
 
 #about-page #about-content .services-card {
-  padding: 2rem 0;
+  padding: 5rem 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/skills.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/skills.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 4rem 0;
 }
 
 #about-page #about-content .services-card h2 {
@@ -973,21 +971,31 @@ header #pic3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
-  padding-bottom: 4rem;
 }
 
 #about-page #about-content .services-card ul li {
   width: 25%;
   font-size: 1.2rem;
-  padding-left: 20%;
   padding-top: 1.5rem;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 992px) {
   #about-page #about-content .services-card ul li {
     width: 100%;
-    padding-left: 30%;
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -997,13 +1005,16 @@ header #pic3 {
 }
 
 #about-page #about-content #testimonials {
-  width: 80%;
-  margin: auto;
-  padding-bottom: 5rem;
+  background-color: #fff;
 }
 
-#about-page #about-content #testimonials .testimonial-card {
-  margin: 2rem 0;
+#about-page #about-content #testimonials .card {
+  background-color: #212529;
+}
+
+#about-page #about-content #testimonials .card h3,
+#about-page #about-content #testimonials .card p {
+  color: #fff;
 }
 
 #about-page footer {

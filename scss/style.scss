@@ -744,13 +744,15 @@ header {
 
     #about-content {
 
-        padding-bottom: 2.5rem;
-                
+        .about-intro {
+            padding: 3rem 0;
+        }
+
         h2 {
             color: #000; 
             text-align: center;
             font-size: 3rem;
-            margin: 2rem 0;
+            // margin: 2rem 0;
             text-transform: uppercase;
                                 
             @include mobile {
@@ -765,13 +767,12 @@ header {
         }
                 
         .services-card {
-            padding: 2rem 0;
+            padding: 5rem 0;
             background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/skills.jpg);
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            margin: 4rem 0;
                 
             h2 {
                 color: $primary-color;
@@ -781,18 +782,22 @@ header {
                 display: flex;
                 flex-wrap: wrap;
                 list-style-type: none;
-                padding-bottom: 4rem;
+                // padding-bottom: 4rem;
                     
                 li {
                     width: 25%;
                     font-size: 1.2rem;
-                    padding-left: 20%;
+                    // padding-left: 20%;
                     padding-top: 1.5rem;
                     color: $primary-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
                     @include mobile {
                         width: 100%;
-                        padding-left: 30%;
+                        padding-left: 0;
+                        justify-content: center;
                     }
 
                     ion-icon {
@@ -804,12 +809,15 @@ header {
         }
                 
         #testimonials {
-            width: 80%;
-            margin: auto;
-            padding-bottom: 5rem;
+            background-color: $primary-color;
                 
-            .testimonial-card {
-                margin: 2rem 0;
+            .card {
+                background-color: $seventh-color;
+
+                h3,
+                p {
+                    color: $primary-color;
+                }
             }
         }
 
