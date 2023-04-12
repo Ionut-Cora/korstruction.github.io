@@ -13,6 +13,12 @@ body {
   margin: auto;
 }
 
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+
 nav {
   height: 100vh;
   width: 100vw;
@@ -81,6 +87,10 @@ nav ul li a:hover {
 }
 
 #top-nav {
+  background-color: #fde047;
+}
+
+#top-nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,11 +101,10 @@ nav ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 5rem;
-  background-color: #fde047;
   position: relative;
 }
 
-#top-nav #contacts-top {
+#top-nav .container #contacts-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +118,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 992px) {
-  #top-nav #contacts-top {
+  #top-nav .container #contacts-top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -117,58 +126,57 @@ nav ul li a:hover {
   }
 }
 
-#top-nav #contacts-top .phone-card {
+#top-nav .container #contacts-top .phone-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 1.5rem;
 }
 
-#top-nav #contacts-top .phone-card:hover {
+#top-nav .container #contacts-top .phone-card:hover {
   cursor: pointer;
 }
 
-#top-nav #contacts-top .phone-card ion-icon {
+#top-nav .container #contacts-top .phone-card ion-icon {
   margin-right: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-#top-nav #contacts-top .phone-card ion-icon:hover {
+#top-nav .container #contacts-top .phone-card ion-icon:hover {
   color: #2A2E34;
 }
 
 @media (max-width: 992px) {
-  #top-nav #contacts-top .phone-card ion-icon {
+  #top-nav .container #contacts-top .phone-card ion-icon {
     display: none;
   }
 }
 
-#top-nav #contacts-top .phone-card p {
-  font-size: 1.5rem;
+#top-nav .container #contacts-top .phone-card p {
+  font-size: 1rem;
 }
 
-#top-nav #contacts-top .phone-card p:hover {
+#top-nav .container #contacts-top .phone-card p:hover {
   color: #2A2E34;
 }
 
 @media (max-width: 992px) {
-  #top-nav #contacts-top .phone-card p {
+  #top-nav .container #contacts-top .phone-card p {
     font-size: 0.9rem;
   }
 }
 
-@media (max-width: 992px) {
-  #top-nav #contacts-top .phone-card {
-    margin: 0 0.5rem;
+@media (max-width: 576px) {
+  #top-nav .container #contacts-top .phone-card {
+    display: none;
   }
 }
 
-#top-nav #logo {
+#top-nav .container #logo {
   position: relative;
   margin: auto;
 }
 
-#top-nav #logo a {
+#top-nav .container #logo a {
   text-transform: uppercase;
   text-decoration: none;
   border: solid 4px #000;
@@ -176,35 +184,28 @@ nav ul li a:hover {
   color: #000;
 }
 
-#top-nav #logo a:hover {
+#top-nav .container #logo a:hover {
   cursor: pointer;
   background-color: #000;
   color: #fde047;
 }
 
 @media (max-width: 992px) {
-  #top-nav #logo a {
+  #top-nav .container #logo a {
     font-size: 1.3rem;
     margin-right: 0.5rem;
   }
 }
 
-#top-nav #menu-btn {
+#top-nav .container #menu-btn {
   font-size: 3rem;
   width: 5%;
   position: absolute;
   right: 0;
 }
 
-#top-nav #menu-btn:hover {
+#top-nav .container #menu-btn:hover {
   cursor: pointer;
-  color: #2A2E34;
-}
-
-@media (max-width: 992px) {
-  #top-nav #menu-btn {
-    padding-right: 10px;
-  }
 }
 
 header {
@@ -584,11 +585,23 @@ header #pic3 {
   }
 }
 
+@media (max-width: 576px) {
+  #content #about h2 {
+    font-size: 1.5rem;
+  }
+}
+
 #content #about p {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 2rem;
   font-size: 1.2rem;
+}
+
+@media (max-width: 576px) {
+  #content #about p {
+    font-size: 1rem;
+  }
 }
 
 #content #about #about-cards {
@@ -622,6 +635,12 @@ header #pic3 {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  #content #about #about-cards .card h3 {
+    font-size: 1.2rem;
+  }
 }
 
 #content #about #about-cards .card p {
@@ -682,6 +701,18 @@ header #pic3 {
   margin-top: 1.5rem;
 }
 
+@media (max-width: 992px) {
+  #content #about .services-card .container .services-cards .card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #content #about .services-card .container .services-cards .card h3 {
+    font-size: 1.2rem;
+  }
+}
+
 #content #about .services-card .container .services-cards .card p {
   text-align: start;
 }
@@ -715,6 +746,12 @@ header #pic3 {
 @media (max-width: 992px) {
   #gallery h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #gallery h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -768,6 +805,12 @@ header #pic3 {
 @media (max-width: 992px) {
   #testimonials h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #testimonials h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -842,6 +885,12 @@ header #pic3 {
 @media (max-width: 992px) {
   #contact h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #contact h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -937,6 +986,7 @@ header #pic3 {
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 992px) {
@@ -945,10 +995,14 @@ header #pic3 {
   }
 }
 
-#about-page #about-content .about-paragraph {
-  font-size: 1.2rem;
-  margin: 1rem auto;
-  width: 80%;
+@media (max-width: 576px) {
+  #about-page #about-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+#about-page #about-content .about-intro p:first-of-type {
+  margin-bottom: 1.5rem;
 }
 
 #about-page #about-content .services-card {
@@ -1028,6 +1082,12 @@ header #pic3 {
 
 @media (max-width: 992px) {
   #gallery-page h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #gallery-page h3 {
     font-size: 1.5rem;
   }
 }
@@ -1082,13 +1142,19 @@ header #pic3 {
   color: #000;
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
 }
 
 @media (max-width: 992px) {
   #contact-page h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #contact-page h2 {
+    font-size: 1.5rem;
   }
 }
 
