@@ -1,3 +1,5 @@
+@import './variables';
+
 @mixin mobile {
     @media (max-width: $mobile) {
         @content;
@@ -8,4 +10,8 @@
     @media (max-width: $phone) {
         @content;
     }
+}
+
+@mixin background-color-mix {
+    background-image: linear-gradient(to right, $eighth-color, $third-color);
 }
