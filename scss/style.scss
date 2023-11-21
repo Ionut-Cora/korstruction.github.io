@@ -469,7 +469,8 @@ header {
             text-align: center;
             color: #000;
             font-size: 3rem;
-            text-transform: uppercase;
+            text-transform: capitalize;
+            // text-transform: uppercase;
 
             @include mobile {
                 font-size: 2.3rem;
@@ -539,7 +540,8 @@ header {
             .container {
                 h2 {
                     color: $primary-color;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
+                    // text-transform: uppercase;
                     margin-bottom: 3rem;
 
                     @include mobile {
@@ -601,7 +603,8 @@ header {
         color: #000;
         text-align: center;
         font-size: 3rem;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        // text-transform: uppercase;
         margin-bottom: 1rem;
                 
         @include mobile {
@@ -643,7 +646,8 @@ header {
     h2 {
         font-size: 3rem;
         text-align: center;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        // text-transform: uppercase;
         margin-bottom: 3rem;
         color: $primary-color;
                 
@@ -701,7 +705,8 @@ header {
     h2 {
         font-size: 3rem;
         text-align: center;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        // text-transform: uppercase;
         margin-bottom: 1rem;
                 
         @include mobile {
@@ -763,7 +768,8 @@ header {
             color: #000; 
             text-align: center;
             font-size: 3rem;
-            text-transform: uppercase;
+            text-transform: capitalize;
+            // text-transform: uppercase;
             margin-bottom: 1rem;
                                 
             @include mobile {
@@ -842,7 +848,8 @@ header {
         font-size: 3rem;
         color: #000;
         margin-bottom: 1rem;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        // text-transform: uppercase;
 
         @include mobile {
             font-size: 2.3rem;
@@ -893,7 +900,8 @@ header {
         text-align: center;
         font-size: 3rem;
         margin-bottom: 2rem;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        // text-transform: uppercase;
                 
         @include mobile {
             font-size: 2.3rem;

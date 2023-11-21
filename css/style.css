@@ -588,7 +588,7 @@ header #pic3 {
   text-align: center;
   color: #000;
   font-size: 3rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 @media (max-width: 992px) {
@@ -670,7 +670,7 @@ header #pic3 {
 
 #content #about .services-card .container h2 {
   color: #FFFFFF;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 3rem;
 }
 
@@ -743,7 +743,7 @@ header #pic3 {
   color: #000;
   text-align: center;
   font-size: 3rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 1rem;
 }
 
@@ -795,7 +795,7 @@ header #pic3 {
 #testimonials h2 {
   font-size: 3rem;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 3rem;
   color: #FFFFFF;
 }
@@ -872,7 +872,7 @@ header #pic3 {
 #contact h2 {
   font-size: 3rem;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 1rem;
 }
 
@@ -945,7 +945,7 @@ header #pic3 {
   color: #000;
   text-align: center;
   font-size: 3rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 1rem;
 }
 
@@ -1035,7 +1035,7 @@ header #pic3 {
   font-size: 3rem;
   color: #000;
   margin-bottom: 1rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 @media (max-width: 992px) {
@@ -1096,7 +1096,7 @@ header #pic3 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 2rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 @media (max-width: 992px) {
