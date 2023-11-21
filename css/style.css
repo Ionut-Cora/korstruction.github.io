@@ -32,13 +32,12 @@ body {
   padding: 0.8rem 1.5rem;
   border-radius: 0.25rem;
   font-size: 1.125rem;
-  font-weight: bold;
   cursor: pointer;
   background-color: #1fc1c3;
   color: #FFFFFF;
   border: 0;
   margin: 1rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -100,7 +99,7 @@ nav ul li {
   list-style-type: none;
   cursor: pointer;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 500;
   white-space: nowrap;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -256,8 +255,8 @@ header .title h1 {
 }
 
 header .title h1 {
-  font-size: 4rem;
-  text-transform: uppercase;
+  font-size: 4.5rem;
+  text-transform: capitalize;
 }
 
 @media (max-width: 992px) {
@@ -311,8 +310,6 @@ header .header-btns .contact-us {
   background-color: transparent;
   color: #fff;
   font-size: 1.125rem;
-  font-weight: bold;
-  text-transform: uppercase;
   text-decoration: none;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -921,7 +918,7 @@ header #pic3 {
 }
 
 #contact #big-contact .contact-card ion-icon {
-  color: #14532d;
+  color: #0a253b;
   margin-right: 5px;
 }
 
@@ -1137,7 +1134,7 @@ header #pic3 {
 }
 
 #contact-page #contact-details #contact-cards .contact-card ion-icon {
-  color: #14532d;
+  color: #0a253b;
   margin-right: 5px;
 }
 

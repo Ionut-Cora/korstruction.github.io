@@ -28,14 +28,15 @@ body {
     padding: 0.8rem 1.5rem;
     border-radius: 0.25rem;
     font-size: 1.125rem;
-    font-weight: bold;
+    // font-weight: bold;
     cursor: pointer;
     background-color: $blue-sky-color;
     // background-color: $fourth-color;
     color: $primary-color;
     border: 0;
     margin: 1rem;
-    text-transform: uppercase;
+    // text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 
@@ -83,7 +84,8 @@ nav {
             list-style-type: none;
             cursor: pointer;
             font-size: 1.5rem;
-            font-weight: bold;
+            // font-weight: bold;
+            font-weight: 500;
             white-space: nowrap;
             color: $primary-color;
             text-transform: uppercase;
@@ -213,8 +215,9 @@ header {
         }
                 
         h1 {
-            font-size: 4rem;
-            text-transform: uppercase;
+            font-size: 4.5rem;
+            text-transform: capitalize;
+            // text-transform: uppercase;
     
             @include mobile {
                 font-size: 3rem;
@@ -260,8 +263,8 @@ header {
             background-color: transparent;
             color: #fff;
             font-size: 1.125rem;
-            font-weight: bold;
-            text-transform: uppercase;
+            // font-weight: bold;
+            // text-transform: uppercase;
             text-decoration: none;
             box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 
@@ -733,7 +736,8 @@ header {
             padding-left: 20%;
         
             ion-icon {
-                color: $third-color;
+                // color: $third-color;
+                color: $blue-color;
                 margin-right: 5px;       
             }
                     
@@ -914,7 +918,8 @@ header {
                 padding: 0.5rem;
     
                 ion-icon {
-                    color: $third-color;
+                    color: $blue-color;
+                    // color: $third-color;
                     margin-right: 5px;                   
                 }               
             }            
