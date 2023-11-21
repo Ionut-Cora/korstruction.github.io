@@ -2,6 +2,9 @@
 @import './resets';
 @import './mixins';
 
+// $blue-color: #0a253b;
+// $blue-sky-color: #1fc1c3;
+
 body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
@@ -27,7 +30,8 @@ body {
     font-size: 1.125rem;
     font-weight: bold;
     cursor: pointer;
-    background-color: $fourth-color;
+    background-color: $blue-sky-color;
+    // background-color: $fourth-color;
     color: $primary-color;
     border: 0;
     margin: 1rem;
@@ -36,7 +40,8 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 
     &:hover {
-        background-color: $fifth-color;
+        background-color: #17acad;
+        // background-color: $fifth-color;
     }
 }
 
@@ -49,8 +54,9 @@ nav {
     margin-top: 80px;
     left: -103%;
     transition: all .5s;
+    background-color: $blue-color;
 
-    @include background-color-mix;
+    // @include background-color-mix;
 
     @include mobile {
         height: 90vh;
@@ -87,7 +93,8 @@ nav {
                 color: $primary-color;
 
                 &:hover {
-                    color: $fourth-color;
+                    color: $blue-sky-color;
+                    // color: $fourth-color;
                 }
             }
         }
@@ -100,7 +107,8 @@ nav {
 }
 
 #top-nav {
-    @include background-color-mix;
+    // @include background-color-mix;
+    background-color: $blue-color;
 
     .container {
         display: flex;
@@ -159,7 +167,8 @@ nav {
                 text-transform: uppercase;
                 text-decoration: none;
                 font-weight: bold;
-                background-color: $fourth-color;
+                background-color: $blue-sky-color;
+                // background-color: $fourth-color;
                 color: $primary-color;
                 padding: 0.5rem 1rem;
     
@@ -489,8 +498,9 @@ header {
                 border-radius: 0.375rem;
                 margin: auto 0.75rem;
                 box-shadow: 0 0.5rem 1rem rgba(33,37,41, 0.15);
+                background-color: $blue-color;
 
-                @include background-color-mix;
+                // @include background-color-mix;
         
                 h3 {
                     color: $primary-color;
@@ -519,8 +529,9 @@ header {
         .services-card {
             padding: 3rem 0;
             margin-top: 3rem;
+            background-color: $blue-color;
 
-            @include background-color-mix;
+            // @include background-color-mix;
 
             .container {
                 h2 {
@@ -981,8 +992,9 @@ header {
 footer {
     text-align: center;
     padding: 30px 0;
+    background-color: $blue-color;
 
-    @include background-color-mix;
+    // @include background-color-mix;
 
     p {
         color: $primary-color;

@@ -34,7 +34,7 @@ body {
   font-size: 1.125rem;
   font-weight: bold;
   cursor: pointer;
-  background-color: #ef4444;
+  background-color: #1fc1c3;
   color: #FFFFFF;
   border: 0;
   margin: 1rem;
@@ -45,7 +45,7 @@ body {
 }
 
 .detail-button:hover {
-  background-color: #f87171;
+  background-color: #17acad;
 }
 
 nav {
@@ -58,8 +58,7 @@ nav {
   left: -103%;
   -webkit-transition: all .5s;
   transition: all .5s;
-  background-image: -webkit-gradient(linear, left top, right top, from(#15803d), to(#14532d));
-  background-image: linear-gradient(to right, #15803d, #14532d);
+  background-color: #0a253b;
 }
 
 @media (max-width: 992px) {
@@ -113,7 +112,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ef4444;
+  color: #1fc1c3;
 }
 
 .toggle-style {
@@ -123,8 +122,7 @@ nav ul li a:hover {
 }
 
 #top-nav {
-  background-image: -webkit-gradient(linear, left top, right top, from(#15803d), to(#14532d));
-  background-image: linear-gradient(to right, #15803d, #14532d);
+  background-color: #0a253b;
 }
 
 #top-nav .container {
@@ -211,7 +209,7 @@ nav ul li a:hover {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  background-color: #ef4444;
+  background-color: #1fc1c3;
   color: #FFFFFF;
   padding: 0.5rem 1rem;
 }
@@ -638,8 +636,7 @@ header #pic3 {
   margin: auto 0.75rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15);
-  background-image: -webkit-gradient(linear, left top, right top, from(#15803d), to(#14532d));
-  background-image: linear-gradient(to right, #15803d, #14532d);
+  background-color: #0a253b;
 }
 
 #content #about #about-cards .card h3 {
@@ -671,8 +668,7 @@ header #pic3 {
 #content #about .services-card {
   padding: 3rem 0;
   margin-top: 3rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#15803d), to(#14532d));
-  background-image: linear-gradient(to right, #15803d, #14532d);
+  background-color: #0a253b;
 }
 
 #content #about .services-card .container h2 {
@@ -1231,8 +1227,7 @@ header #pic3 {
 footer {
   text-align: center;
   padding: 30px 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#15803d), to(#14532d));
-  background-image: linear-gradient(to right, #15803d, #14532d);
+  background-color: #0a253b;
 }
 
 footer p {
