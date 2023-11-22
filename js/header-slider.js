@@ -51,7 +51,7 @@ let refreshInterval;
 
 refreshInterval = setInterval(function() {
     handleDesign();
-}, 5000);
+}, 7000);
 
 prev.addEventListener('click', (event) => {
     event.preventDefault();
