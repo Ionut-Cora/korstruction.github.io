@@ -199,265 +199,266 @@ nav {
     }
 }
 
-
-header {
-    display: flex;
-    position: relative;
-    height: 100vh;
-    
-    .title {
-        width: 80%;
-    
-        p,
-        h1 {
-            color: $primary-color;
-            text-align: center;
-        }
-                
-        h1 {
-            font-size: 4.5rem;
-            text-transform: capitalize;
-            // text-transform: uppercase;
-    
-            @include mobile {
-                font-size: 3rem;
-            }
-
-            @include phone {
-                font-size: 2.5rem;
-            }
-        }
-                
-        p {
-            font-size: 3rem;
-    
-            @include mobile {
-                font-size: 1.5rem;
-            }
-        }
-                
-        .title-paragraph {
-            @include mobile {
-                display: none;
-            }
-        }
-    }
-
-    .header-btns {
-        margin-top: 2rem;
-
-        .find-more {
-            margin: 1rem;
-    
-            @include mobile {
-                margin: 0.5rem;
-            }
-        }
-    
-        .contact-us {
-            padding: 0.675rem 1.25rem;
-            border-radius: 0.25rem;
-            margin: 1rem;
-            border: 2px solid #fff;
-            cursor: pointer;
-            background-color: transparent;
-            color: #fff;
-            font-size: 1.125rem;
-            // font-weight: bold;
-            // text-transform: uppercase;
-            text-decoration: none;
-            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-
-            &:hover {
-                background-color: #e2e8f0;
-                border-color: #e2e8f0;
-                color: #000;
-            }
-
-            @include mobile {
-                margin: 0.5rem;
-            }
-        }
-
-        @include mobile {
-            display: flex;
-        }
-
-        @include phone {
-            flex-direction: column;
-        }
-    }
-    
-    .picture1,
-    .picture2,
-    .picture3 {
-        width: 100%;
-        height: 100%;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-bottom: 1rem;
-    }
-            
-    .picture1 {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/pic1.jpg);
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size:  cover;
-    }
-            
-    .picture2 {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../images/pic2.jpg);
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        @include mobile {
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic2.jpg);
-        }
-
-        div {
+#home-page {
+    header {
+        display: flex;
+        position: relative;
+        height: 100vh;
+        
+        .title {
             width: 80%;
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-
-            @include mobile {
-                margin: 1rem auto;
-                align-items: center;
+        
+            p,
+            h1 {
+                color: $primary-color;
+                text-align: center;
             }
-
-            .title {
-
-                h1 {
-                    text-align: end;
-
-                    @include mobile {
-                        text-align: center;
-                    }
-                }
-            }
-
-            .header-btns {
-                width: 80%;
-                display: flex;
-                flex-direction: row;
-                justify-content: end;
-
+                    
+            h1 {
+                font-size: 4.5rem;
+                text-transform: capitalize;
+                // text-transform: uppercase;
+        
                 @include mobile {
-                    justify-content: center;
+                    font-size: 3rem;
                 }
-
+    
                 @include phone {
-                    flex-direction: column;
+                    font-size: 2.5rem;
                 }
             }
-        }
-    }
-            
-    .picture3 {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/pic3.jpg);
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        @include mobile {
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic3.jpg);
-        }
-
-        div {
-            width: 80%;
-
-            @include mobile {
-                margin: 1rem auto;
-            }
-
-            .title {
-                width: 50%;
-
-                h1 {
-                    text-align: start;
-
-                    @include mobile {
-                        text-align: center;
-                    }
-                }
-
+                    
+            p {
+                font-size: 3rem;
+        
                 @include mobile {
-                    width: 100%;
+                    font-size: 1.5rem;
                 }
             }
-  
-            .header-btns {
+                    
+            .title-paragraph {
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    
+        .header-btns {
+            margin-top: 2rem;
+    
+            .find-more {
+                margin: 1rem;
+        
+                @include mobile {
+                    margin: 0.5rem;
+                }
+            }
+        
+            .contact-us {
+                padding: 0.675rem 1.25rem;
+                border-radius: 0.25rem;
+                margin: 1rem;
+                border: 2px solid #fff;
+                cursor: pointer;
+                background-color: transparent;
+                color: #fff;
+                font-size: 1.125rem;
+                // font-weight: bold;
+                // text-transform: uppercase;
+                text-decoration: none;
+                box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    
+                &:hover {
+                    background-color: #e2e8f0;
+                    border-color: #e2e8f0;
+                    color: #000;
+                }
+    
+                @include mobile {
+                    margin: 0.5rem;
+                }
+            }
+    
+            @include mobile {
+                display: flex;
+            }
+    
+            @include phone {
+                flex-direction: column;
+            }
+        }
+        
+        .picture1,
+        .picture2,
+        .picture3 {
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 1rem;
+        }
+                
+        .picture1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/pic1.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:  cover;
+        }
+                
+        .picture2 {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../images/pic2.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            @include mobile {
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic2.jpg);
+            }
+    
+            div {
                 width: 80%;
                 display: flex;
-                align-items: flex-start;
-
+                flex-direction: column;
+                align-items: end;
+    
                 @include mobile {
-                    justify-content: center;
+                    margin: 1rem auto;
                     align-items: center;
                 }
+    
+                .title {
+    
+                    h1 {
+                        text-align: end;
+    
+                        @include mobile {
+                            text-align: center;
+                        }
+                    }
+                }
+    
+                .header-btns {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+    
+                    @include mobile {
+                        justify-content: center;
+                    }
+    
+                    @include phone {
+                        flex-direction: column;
+                    }
+                }
             }
         }
-    }
-            
-    .active {
-        display: flex;
-    }
-            
-    #prev,
-    #next {
-        position: absolute;
-        color: $primary-color;
-        padding: 0 2rem;
-        font-size: 2rem;
-        cursor: pointer;
-        background: none;
-        border: 0;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        top: 47%;
-    }
-            
-    #prev {
-        left: 0;
-    }
-            
-    #next {
-        right: 0;
-    }
-            
-    #pic1,
-    #pic2,
-    #pic3 {
-        position: absolute;
-        left: 50%;
-        bottom: 10px;
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        cursor: pointer;
-        border: 0;
-    }
-            
-    #pic1 {
-        margin: 0 -20px;
-        background-color: $primary-color;
-    }
-            
-    #pic2 {
-        margin: 0;
-        background-color: $secondary-color;
-    }
-            
-    #pic3 {
-        margin: 0 20px;
-        background-color: $secondary-color;
+                
+        .picture3 {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/pic3.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            @include mobile {
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic3.jpg);
+            }
+    
+            div {
+                width: 80%;
+    
+                @include mobile {
+                    margin: 1rem auto;
+                }
+    
+                .title {
+                    width: 50%;
+    
+                    h1 {
+                        text-align: start;
+    
+                        @include mobile {
+                            text-align: center;
+                        }
+                    }
+    
+                    @include mobile {
+                        width: 100%;
+                    }
+                }
+      
+                .header-btns {
+                    width: 80%;
+                    display: flex;
+                    align-items: flex-start;
+    
+                    @include mobile {
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+                
+        .active {
+            display: flex;
+        }
+                
+        #prev,
+        #next {
+            position: absolute;
+            color: $primary-color;
+            padding: 0 2rem;
+            font-size: 2rem;
+            cursor: pointer;
+            background: none;
+            border: 0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            top: 47%;
+        }
+                
+        #prev {
+            left: 0;
+        }
+                
+        #next {
+            right: 0;
+        }
+                
+        #pic1,
+        #pic2,
+        #pic3 {
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 0;
+        }
+                
+        #pic1 {
+            margin: 0 -20px;
+            background-color: $primary-color;
+        }
+                
+        #pic2 {
+            margin: 0;
+            background-color: $secondary-color;
+        }
+                
+        #pic3 {
+            margin: 0 20px;
+            background-color: $secondary-color;
+        }
     }
 }
     
@@ -762,6 +763,45 @@ header {
 #about-page {
     width: 100%;
     margin: auto;
+
+    header {
+        height: 75vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/about-page-header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        display: flex;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1,
+            p {
+                color: $primary-color;
+                text-align: center;
+            }
+    
+            h1 {
+                font-size: 5rem;
+
+                @include mobile {
+                    font-size: 2.5rem;
+                }
+            }
+    
+            p {
+                font-size: 1.2rem;
+                width: 75%;
+
+                @include mobile {
+                    font-size: 1rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
 
     #about-content {
         .about-intro {
