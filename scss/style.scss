@@ -978,6 +978,45 @@ nav {
 }
 
 #contact-page {
+    header {
+        height: 75vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/contact-page-header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        display: flex;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1,
+            p {
+                color: $primary-color;
+                text-align: center;
+            }
+    
+            h1 {
+                font-size: 5rem;
+
+                @include mobile {
+                    font-size: 2.5rem;
+                }
+            }
+    
+            p {
+                font-size: 1.2rem;
+                width: 75%;
+
+                @include mobile {
+                    font-size: 1rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     h2 {
         color: #000; 
         text-align: center;
