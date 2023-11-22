@@ -414,7 +414,7 @@ nav {
         }
                 
         .picture3 {
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/pic3.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/pic3.jpg);
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -472,7 +472,7 @@ nav {
             position: absolute;
             color: $primary-color;
             padding: 0 2rem;
-            font-size: 1.5rem;
+            font-size: 2rem;
             cursor: pointer;
             background: none;
             border: 0;
