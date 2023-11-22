@@ -110,6 +110,8 @@ nav {
 
 #top-nav {
     // @include background-color-mix;
+    position: relative;
+    z-index: 1;
     background-color: $blue-color;
 
     .container {
@@ -204,12 +206,22 @@ nav {
         display: flex;
         position: relative;
         height: 100vh;
+        margin-top: -5rem;
         
         .title {
             width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         
             p,
-            h1 {
+            h1,
+            h2 {
+                color: $primary-color;
+            }
+
+            h1,
+            h2 {
                 color: $primary-color;
                 text-align: center;
             }
@@ -227,18 +239,61 @@ nav {
                     font-size: 2.5rem;
                 }
             }
-                    
-            p {
+
+            h2 {
                 font-size: 3rem;
-        
+
                 @include mobile {
                     font-size: 1.5rem;
                 }
             }
                     
-            .title-paragraph {
+            p {
+                font-size: 1.2rem;
+        
                 @include mobile {
-                    display: none;
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+                    
+            // .title-paragraph {
+            //     @include mobile {
+            //         display: none;
+            //     }
+            // }
+        }
+
+        .picture1,
+        .picture3 {
+            p {
+                width: 100%;
+                text-align: center;
+
+                @include mobile {
+                    width: 80%;
+                }
+            }
+        }
+
+        .picture1 {
+            p {
+                margin-bottom: 2rem;
+
+                @include mobile {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .picture2 {
+            p {
+                width: 50%;
+                text-align: end;
+
+                @include mobile {
+                    text-align: center;
+                    width: 100%;
                 }
             }
         }
@@ -351,9 +406,9 @@ nav {
                         justify-content: center;
                     }
     
-                    @include phone {
-                        flex-direction: column;
-                    }
+                    // @include phone {
+                    //     flex-direction: column;
+                    // }
                 }
             }
         }
@@ -371,13 +426,16 @@ nav {
     
             div {
                 width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
     
                 @include mobile {
                     margin: 1rem auto;
                 }
     
                 .title {
-                    width: 50%;
+                    // width: 50%;
     
                     h1 {
                         text-align: start;
@@ -395,12 +453,12 @@ nav {
                 .header-btns {
                     width: 80%;
                     display: flex;
-                    align-items: flex-start;
+                    flex-direction: row;
+                    justify-content: center;
     
-                    @include mobile {
-                        justify-content: center;
-                        align-items: center;
-                    }
+                    // @include mobile {
+                    //     flex-direction: column;
+                    // }
                 }
             }
         }
@@ -414,7 +472,7 @@ nav {
             position: absolute;
             color: $primary-color;
             padding: 0 2rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
             cursor: pointer;
             background: none;
             border: 0;
@@ -438,8 +496,8 @@ nav {
             position: absolute;
             left: 50%;
             bottom: 10px;
-            height: 15px;
-            width: 15px;
+            height: 10px;
+            width: 10px;
             border-radius: 50%;
             cursor: pointer;
             border: 0;

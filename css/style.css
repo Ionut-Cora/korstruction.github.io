@@ -121,6 +121,8 @@ nav ul li a:hover {
 }
 
 #top-nav {
+  position: relative;
+  z-index: 1;
   background-color: #0a253b;
 }
 
@@ -242,14 +244,31 @@ nav ul li a:hover {
   display: flex;
   position: relative;
   height: 100vh;
+  margin-top: -5rem;
 }
 
 #home-page header .title {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #home-page header .title p,
-#home-page header .title h1 {
+#home-page header .title h1,
+#home-page header .title h2 {
+  color: #FFFFFF;
+}
+
+#home-page header .title h1,
+#home-page header .title h2 {
   color: #FFFFFF;
   text-align: center;
 }
@@ -271,19 +290,59 @@ nav ul li a:hover {
   }
 }
 
-#home-page header .title p {
+#home-page header .title h2 {
   font-size: 3rem;
 }
 
 @media (max-width: 992px) {
-  #home-page header .title p {
+  #home-page header .title h2 {
     font-size: 1.5rem;
   }
 }
 
+#home-page header .title p {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 992px) {
-  #home-page header .title .title-paragraph {
-    display: none;
+  #home-page header .title p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+#home-page header .picture1 p,
+#home-page header .picture3 p {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  #home-page header .picture1 p,
+  #home-page header .picture3 p {
+    width: 80%;
+  }
+}
+
+#home-page header .picture1 p {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+  #home-page header .picture1 p {
+    margin-bottom: 0;
+  }
+}
+
+#home-page header .picture2 p {
+  width: 50%;
+  text-align: end;
+}
+
+@media (max-width: 992px) {
+  #home-page header .picture2 p {
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -443,15 +502,6 @@ nav ul li a:hover {
   }
 }
 
-@media (max-width: 576px) {
-  #home-page header .picture2 div .header-btns {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 #home-page header .picture3 {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.4))), url(../images/pic3.jpg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/pic3.jpg);
@@ -470,16 +520,22 @@ nav ul li a:hover {
 
 #home-page header .picture3 div {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 992px) {
   #home-page header .picture3 div {
     margin: 1rem auto;
   }
-}
-
-#home-page header .picture3 div .title {
-  width: 50%;
 }
 
 #home-page header .picture3 div .title h1 {
@@ -503,20 +559,13 @@ nav ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media (max-width: 992px) {
-  #home-page header .picture3 div .header-btns {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #home-page header .active {
@@ -530,7 +579,7 @@ nav ul li a:hover {
   position: absolute;
   color: #FFFFFF;
   padding: 0 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   background: none;
   border: 0;
@@ -558,8 +607,8 @@ nav ul li a:hover {
   position: absolute;
   left: 50%;
   bottom: 10px;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   cursor: pointer;
   border: 0;
