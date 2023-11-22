@@ -828,6 +828,47 @@ nav {
             p:first-of-type {
                 margin-bottom: 1.5rem;
             }
+
+            .container {
+                display: flex;
+
+                @include mobile {
+                    display: block;
+                }
+
+                div {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include mobile {
+                        width: 100%;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+
+                        @include mobile {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    a {
+                        margin-top: 1.7rem;
+                    }
+
+                    img {
+                        width: 75%;
+
+                        @include mobile {
+                            margin-top: 2rem;
+                            width: 50%;
+                        }
+                    }
+                }
+            }
         }
                 
         .services-card {

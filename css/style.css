@@ -1018,6 +1018,66 @@ nav ul li a:hover {
   margin-bottom: 1.5rem;
 }
 
+#about-page #about-content .about-intro .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  #about-page #about-content .about-intro .container {
+    display: block;
+  }
+}
+
+#about-page #about-content .about-intro .container div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 992px) {
+  #about-page #about-content .about-intro .container div {
+    width: 100%;
+  }
+}
+
+#about-page #about-content .about-intro .container div p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  #about-page #about-content .about-intro .container div p {
+    font-size: 1rem;
+  }
+}
+
+#about-page #about-content .about-intro .container div a {
+  margin-top: 1.7rem;
+}
+
+#about-page #about-content .about-intro .container div img {
+  width: 75%;
+}
+
+@media (max-width: 992px) {
+  #about-page #about-content .about-intro .container div img {
+    margin-top: 2rem;
+    width: 50%;
+  }
+}
+
 #about-page #about-content .services-card {
   padding: 5rem 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/skills.jpg);
