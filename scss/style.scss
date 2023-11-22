@@ -2,9 +2,6 @@
 @import './resets';
 @import './mixins';
 
-// $blue-color: #0a253b;
-// $blue-sky-color: #1fc1c3;
-
 body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
@@ -28,21 +25,17 @@ body {
     padding: 0.8rem 1.5rem;
     border-radius: 0.25rem;
     font-size: 1.125rem;
-    // font-weight: bold;
     cursor: pointer;
     background-color: $blue-sky-color;
-    // background-color: $fourth-color;
     color: $primary-color;
     border: 0;
     margin: 1rem;
-    // text-transform: uppercase;
     text-transform: capitalize;
     text-decoration: none;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 
     &:hover {
         background-color: #17acad;
-        // background-color: $fifth-color;
     }
 }
 
@@ -56,8 +49,6 @@ nav {
     left: -103%;
     transition: all .5s;
     background-color: $blue-color;
-
-    // @include background-color-mix;
 
     @include mobile {
         height: 90vh;
@@ -84,7 +75,6 @@ nav {
             list-style-type: none;
             cursor: pointer;
             font-size: 1.5rem;
-            // font-weight: bold;
             font-weight: 500;
             white-space: nowrap;
             color: $primary-color;
@@ -96,7 +86,6 @@ nav {
 
                 &:hover {
                     color: $blue-sky-color;
-                    // color: $fourth-color;
                 }
             }
         }
@@ -109,7 +98,6 @@ nav {
 }
 
 #top-nav {
-    // @include background-color-mix;
     position: relative;
     z-index: 1;
     background-color: $blue-color;
@@ -172,7 +160,6 @@ nav {
                 text-decoration: none;
                 font-weight: bold;
                 background-color: $blue-sky-color;
-                // background-color: $fourth-color;
                 color: $primary-color;
                 padding: 0.5rem 1rem;
     
@@ -181,7 +168,6 @@ nav {
                 }
     
                 @include mobile {
-                    // font-size: 1.3rem;
                     margin-right: 0.5rem;
                 }
             }
@@ -229,7 +215,6 @@ nav {
             h1 {
                 font-size: 4.5rem;
                 text-transform: capitalize;
-                // text-transform: uppercase;
         
                 @include mobile {
                     font-size: 3rem;
@@ -256,12 +241,6 @@ nav {
                     margin-top: 1rem;
                 }
             }
-                    
-            // .title-paragraph {
-            //     @include mobile {
-            //         display: none;
-            //     }
-            // }
         }
 
         .picture1,
@@ -318,8 +297,6 @@ nav {
                 background-color: transparent;
                 color: #fff;
                 font-size: 1.125rem;
-                // font-weight: bold;
-                // text-transform: uppercase;
                 text-decoration: none;
                 box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     
@@ -405,10 +382,6 @@ nav {
                     @include mobile {
                         justify-content: center;
                     }
-    
-                    // @include phone {
-                    //     flex-direction: column;
-                    // }
                 }
             }
         }
@@ -435,8 +408,6 @@ nav {
                 }
     
                 .title {
-                    // width: 50%;
-    
                     h1 {
                         text-align: start;
     
@@ -455,10 +426,6 @@ nav {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
-    
-                    // @include mobile {
-                    //     flex-direction: column;
-                    // }
                 }
             }
         }
@@ -529,7 +496,6 @@ nav {
             color: #000;
             font-size: 3rem;
             text-transform: capitalize;
-            // text-transform: uppercase;
 
             @include mobile {
                 font-size: 2.3rem;
@@ -562,15 +528,12 @@ nav {
                 margin: auto 0.75rem;
                 box-shadow: 0 0.5rem 1rem rgba(33,37,41, 0.15);
                 background-color: $blue-color;
-
-                // @include background-color-mix;
         
                 h3 {
                     color: $primary-color;
                     text-align: center;
                     font-size: 1.5rem;
                     text-transform: capitalize;
-                    // text-transform: uppercase;
                     margin-bottom: 1rem;
                     
                     @include phone {
@@ -595,13 +558,10 @@ nav {
             margin-top: 3rem;
             background-color: $blue-color;
 
-            // @include background-color-mix;
-
             .container {
                 h2 {
                     color: $primary-color;
                     text-transform: capitalize;
-                    // text-transform: uppercase;
                     margin-bottom: 3rem;
 
                     @include mobile {
@@ -635,10 +595,6 @@ nav {
                         h3 {
                             font-size: 1.5rem;
                             margin-top: 1.2rem;
-
-                            // @include mobile {
-                            //     font-size: 1.5rem;
-                            // }
                         }
 
                         p {
@@ -667,7 +623,6 @@ nav {
         text-align: center;
         font-size: 3rem;
         text-transform: capitalize;
-        // text-transform: uppercase;
         margin-bottom: 1rem;
                 
         @include mobile {
@@ -710,7 +665,6 @@ nav {
         font-size: 3rem;
         text-align: center;
         text-transform: capitalize;
-        // text-transform: uppercase;
         margin-bottom: 3rem;
         color: $primary-color;
                 
@@ -769,7 +723,6 @@ nav {
         font-size: 3rem;
         text-align: center;
         text-transform: capitalize;
-        // text-transform: uppercase;
         margin-bottom: 1rem;
                 
         @include mobile {
@@ -793,7 +746,6 @@ nav {
     h2,
     p {
         color: $black-color;
-        // color: $primary-color;
     }
     
     #big-contact {  
@@ -807,7 +759,6 @@ nav {
             padding-left: 20%;
         
             ion-icon {
-                // color: $third-color;
                 color: $blue-color;
                 margin-right: 5px;       
             }
@@ -874,7 +825,6 @@ nav {
             text-align: center;
             font-size: 3rem;
             text-transform: capitalize;
-            // text-transform: uppercase;
             margin-bottom: 1rem;
                                 
             @include mobile {
@@ -1034,7 +984,6 @@ nav {
         color: #000;
         margin-bottom: 1rem;
         text-transform: capitalize;
-        // text-transform: uppercase;
 
         @include mobile {
             font-size: 2.3rem;
@@ -1125,7 +1074,6 @@ nav {
         font-size: 3rem;
         margin-bottom: 2rem;
         text-transform: capitalize;
-        // text-transform: uppercase;
                 
         @include mobile {
             font-size: 2.3rem;
@@ -1140,11 +1088,6 @@ nav {
             display: flex;
             flex-direction: column;
             align-items: center;
-
-            // h2,
-            // p {
-            //     color: $primary-color;
-            // }
 
             p {
                 width: 75%;
@@ -1202,7 +1145,6 @@ nav {
     
                 ion-icon {
                     color: $blue-color;
-                    // color: $third-color;
                     margin-right: 5px;                   
                 }               
             }            
@@ -1232,8 +1174,6 @@ footer {
     text-align: center;
     padding: 30px 0;
     background-color: $blue-color;
-
-    // @include background-color-mix;
 
     p {
         color: $primary-color;
