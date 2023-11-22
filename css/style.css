@@ -866,8 +866,8 @@ nav ul li a:hover {
 
 #contact {
   padding: 3rem 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/pic3.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../images/contact-section-img.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/contact-section-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -889,19 +889,21 @@ nav ul li a:hover {
 #contact p {
   text-align: center;
   width: 75%;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 1rem auto;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 992px) {
   #contact p {
     width: 100%;
     margin: 1rem auto;
+    font-size: 1rem;
   }
 }
 
 #contact h2,
 #contact p {
-  color: #FFFFFF;
+  color: #212529;
 }
 
 #contact #big-contact {

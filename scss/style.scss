@@ -702,7 +702,7 @@ nav {
     
 #contact {
     padding: 3rem 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic3.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/contact-section-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size:  cover;
@@ -722,17 +722,20 @@ nav {
     p {
         text-align: center;
         width: 75%;
-        margin: 0 auto 2rem auto;
+        margin: 0 auto 1rem auto;
+        font-size: 1.2rem;
 
         @include mobile {
             width: 100%;
             margin: 1rem auto;
+            font-size: 1rem;
         }
     }
 
     h2,
     p {
-        color: $primary-color;
+        color: $black-color;
+        // color: $primary-color;
     }
     
     #big-contact {  
