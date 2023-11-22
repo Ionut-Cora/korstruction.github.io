@@ -221,7 +221,6 @@ nav ul li a:hover {
 
 @media (max-width: 992px) {
   #top-nav .container #logo a {
-    font-size: 1.3rem;
     margin-right: 0.5rem;
   }
 }
