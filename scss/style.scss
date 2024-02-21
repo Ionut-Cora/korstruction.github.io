@@ -191,6 +191,14 @@ nav {
             &:hover {
                 cursor: pointer;
             }
+
+            @include mobile {
+                width: 7%;
+            }
+
+            @include phone {
+                width: 10%;
+            }
         }
     }
 }

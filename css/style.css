@@ -186,6 +186,16 @@ nav ul li a:hover {
 #top-nav .container #menu-btn:hover {
   cursor: pointer;
 }
+@media (max-width: 992px) {
+  #top-nav .container #menu-btn {
+    width: 7%;
+  }
+}
+@media (max-width: 576px) {
+  #top-nav .container #menu-btn {
+    width: 10%;
+  }
+}
 
 #home-page header {
   display: flex;
