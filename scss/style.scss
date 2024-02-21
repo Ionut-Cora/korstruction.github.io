@@ -1148,9 +1148,18 @@ nav {
                 padding: 0.5rem;
     
                 ion-icon {
-                    color: $blue-color;
+                    color: $blue-sky-color;
                     margin-right: 5px;                   
-                }               
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: #000000;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }            
         }
 

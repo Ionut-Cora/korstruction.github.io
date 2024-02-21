@@ -1064,8 +1064,15 @@ nav ul li a:hover {
   padding: 0.5rem;
 }
 #contact-page #contact-details #contact-cards .contact-card ion-icon {
-  color: #0a253b;
+  color: #1fc1c3;
   margin-right: 5px;
+}
+#contact-page #contact-details #contact-cards .contact-card a {
+  text-decoration: none;
+  color: #000000;
+}
+#contact-page #contact-details #contact-cards .contact-card a:hover {
+  text-decoration: underline;
 }
 @media (max-width: 576px) {
   #contact-page #contact-details #office-hours {
