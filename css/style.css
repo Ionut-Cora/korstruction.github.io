@@ -157,9 +157,12 @@ nav ul li a:hover {
   margin: auto;
 }
 #top-nav .container #logo a {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
   background-color: #1fc1c3;
   color: #FFFFFF;
   padding: 0.5rem 1rem;
@@ -170,6 +173,7 @@ nav ul li a:hover {
 @media (max-width: 992px) {
   #top-nav .container #logo a {
     margin-right: 0.5rem;
+    font-size: 1.2rem;
   }
 }
 #top-nav .container #menu-btn {
