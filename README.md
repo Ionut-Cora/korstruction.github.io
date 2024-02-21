@@ -5,8 +5,8 @@
 <img src="Korstruction Construction Website Img.jpg" alt="Construction Website Theme" />
 
 ## For this website I used:
-- HTML
-- JavaScript
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 - [SASS](https://sass-lang.com/) - CSS extention
 
 ## Website description
