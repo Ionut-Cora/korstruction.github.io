@@ -97,6 +97,10 @@ nav {
     transition: all .5s;
 }
 
+.nav-open {
+    overflow-y: hidden;
+}
+
 #top-nav {
     position: relative;
     z-index: 1;
