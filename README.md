@@ -2,7 +2,7 @@
 
 ## View live website: https://ionut-cora.github.io/korstruction.github.io/
 
-<img src="Korstruction Construction Website Img.jpg" alt="Construction Website Theme" />
+<img src="Construction Website Img.jpg" alt="Construction Website Theme" />
 
 ## For this website I used:
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
