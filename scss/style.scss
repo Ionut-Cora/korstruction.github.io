@@ -425,11 +425,7 @@ nav {
     
                 .title {
                     h1 {
-                        text-align: start;
-    
-                        @include mobile {
-                            text-align: center;
-                        }
+                        text-align: center;
                     }
     
                     @include mobile {
